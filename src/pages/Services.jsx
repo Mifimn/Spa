@@ -113,7 +113,7 @@ export default function Services() {
   return (
     <div>
       {/* Hero Banner */}
-      <section className="bg-gradient-to-r from-instagram-blue to-purple-700 text-white py-20">
+      <section className="bg-gold-gradient text-white py-20">
         <div className="max-w-7xl mx-auto px-4 text-center">
           <h1 className="text-5xl font-bold mb-4">Our Full Spectrum of Aesthetic & Wellness Services</h1>
           <p className="text-xl">Personalized treatments designed for your unique beauty goals</p>
@@ -125,7 +125,7 @@ export default function Services() {
         <div className="max-w-7xl mx-auto px-4">
           {serviceCategories.map((category, catIdx) => (
             <div key={catIdx} className="mb-16">
-              <h2 className="text-3xl font-bold mb-8 text-instagram-blue border-b-2 border-instagram-blue pb-2">
+              <h2 className="text-3xl font-bold mb-8 text-gold-primary border-b-2 border-gold-primary pb-2">
                 {category.category}
               </h2>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -136,13 +136,13 @@ export default function Services() {
                   return (
                     <div key={svcIdx} className="bg-white border border-gray-200 rounded-lg shadow-md hover:shadow-xl transition overflow-hidden">
                       <div className="p-6">
-                        <div className="w-12 h-12 bg-instagram-blue rounded-lg mb-4 flex items-center justify-center">
+                        <div className="w-12 h-12 bg-gold-gradient rounded-lg mb-4 flex items-center justify-center">
                           <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
                           </svg>
                         </div>
                         <h3 className="text-xl font-bold mb-2">{service.name}</h3>
-                        <p className="text-instagram-blue font-semibold mb-3">{service.price}</p>
+                        <p className="text-gold-primary font-semibold mb-3">{service.price}</p>
                         <p className="text-gray-600 mb-4">{service.description}</p>
                         
                         {isExpanded && (
@@ -158,7 +158,7 @@ export default function Services() {
                           >
                             {isExpanded ? 'Show Less' : 'Learn More'}
                           </button>
-                          <button className="flex-1 bg-instagram-blue text-white px-4 py-2 rounded-lg hover:bg-opacity-90 transition text-sm font-semibold">
+                          <button className="flex-1 bg-gold-gradient text-white px-4 py-2 rounded-lg hover:opacity-90 transition text-sm font-semibold">
                             Book Now
                           </button>
                         </div>
@@ -177,7 +177,7 @@ export default function Services() {
         <div className="max-w-4xl mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold mb-4">Ready to Begin Your Transformation?</h2>
           <p className="text-gray-700 mb-8 text-lg">Schedule a complimentary consultation with our expert team</p>
-          <button className="bg-instagram-blue text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-opacity-90 transition">
+          <button className="bg-gold-gradient text-white px-8 py-4 rounded-lg text-lg font-semibold hover:opacity-90 transition">
             Book Your Consultation
           </button>
         </div>

@@ -31,7 +31,7 @@ export default function Portfolio() {
   return (
     <div>
       {/* Hero Banner */}
-      <section className="bg-gradient-to-r from-instagram-blue to-purple-700 text-white py-20">
+      <section className="bg-gold-gradient text-white py-20">
         <div className="max-w-7xl mx-auto px-4 text-center">
           <h1 className="text-5xl font-bold mb-4">Our Results. Your Confidence.</h1>
           <p className="text-xl">Real transformations from real clients</p>
@@ -46,7 +46,7 @@ export default function Portfolio() {
               onClick={() => setActiveTab('photos')}
               className={`px-8 py-3 rounded-lg font-semibold transition ${
                 activeTab === 'photos'
-                  ? 'bg-instagram-blue text-white'
+                  ? 'bg-gold-gradient text-white'
                   : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
               }`}
             >
@@ -56,7 +56,7 @@ export default function Portfolio() {
               onClick={() => setActiveTab('videos')}
               className={`px-8 py-3 rounded-lg font-semibold transition ${
                 activeTab === 'videos'
-                  ? 'bg-instagram-blue text-white'
+                  ? 'bg-gold-gradient text-white'
                   : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
               }`}
             >
@@ -78,7 +78,7 @@ export default function Portfolio() {
                   onClick={() => setSelectedFilter(type)}
                   className={`px-6 py-2 rounded-full font-semibold transition ${
                     selectedFilter === type
-                      ? 'bg-instagram-blue text-white'
+                      ? 'bg-gold-gradient text-white'
                       : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
                   }`}
                 >
@@ -104,7 +104,7 @@ export default function Portfolio() {
                     </div>
                   </div>
                   <div className="p-4">
-                    <span className="inline-block bg-instagram-blue text-white text-xs px-3 py-1 rounded-full mb-2">
+                    <span className="inline-block bg-gold-gradient text-white text-xs px-3 py-1 rounded-full mb-2">
                       {photo.service}
                     </span>
                     <h3 className="font-bold text-lg">{photo.title}</h3>
@@ -129,7 +129,7 @@ export default function Portfolio() {
                 >
                   <div className="relative bg-gray-300 h-64 flex items-center justify-center">
                     <div className="absolute inset-0 flex items-center justify-center">
-                      <div className="w-16 h-16 bg-instagram-blue rounded-full flex items-center justify-center">
+                      <div className="w-16 h-16 bg-gold-gradient rounded-full flex items-center justify-center">
                         <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
                           <path d="M6.3 2.841A1.5 1.5 0 004 4.11V15.89a1.5 1.5 0 002.3 1.269l9.344-5.89a1.5 1.5 0 000-2.538L6.3 2.84z" />
                         </svg>
@@ -181,7 +181,7 @@ export default function Portfolio() {
                 </div>
                 <div className="p-6">
                   <h3 className="text-2xl font-bold mb-2">{selectedMedia.data.title}</h3>
-                  <span className="inline-block bg-instagram-blue text-white px-3 py-1 rounded-full text-sm">
+                  <span className="inline-block bg-gold-gradient text-white px-3 py-1 rounded-full text-sm">
                     {selectedMedia.data.service}
                   </span>
                 </div>
