@@ -136,7 +136,7 @@ export default function Portfolio() {
       </section>
 
       {/* Tab Selector */}
-      <section className="bg-white border-b sticky top-20 z-40">
+      <section className="bg-white border-b">
         <div className="max-w-7xl mx-auto px-4">
           <div className="flex justify-center space-x-4 py-6">
             <button

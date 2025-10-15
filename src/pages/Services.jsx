@@ -1072,7 +1072,7 @@ export default function Services() {
       </section>
 
       {/* Search and Filter */}
-      <section className="bg-white border-b sticky top-20 z-40">
+      <section className="bg-white border-b">
         <div className="max-w-7xl mx-auto px-4 py-6">
           <div className="flex flex-col md:flex-row gap-4 items-center justify-between">
             {/* Search Bar */}
