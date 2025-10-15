@@ -3,6 +3,10 @@ import { useState } from 'react';
 
 export default function Services() {
   const [expandedService, setExpandedService] = useState(null);
+  const [searchQuery, setSearchQuery] = useState('');
+  const [selectedCategory, setSelectedCategory] = useState('all');
+
+  const allCategories = ['all', 'VCP Spa Packages', 'Facial Procedures', 'Massage', 'Body Exfoliation & Sauna', 'Laser Non-Surgical Procedures', 'Injectables (Botox, Fillers, PRP)', 'IV Drips', 'Weight Loss', 'Morpheus Procedures', 'Dental Procedures', 'Manicure and Pedicure', 'Nail Procedures'];
 
   const serviceCategories = [
     {
@@ -1026,6 +1030,29 @@ export default function Services() {
     }
   ];
 
+  // Filter service categories based on search and category selection
+  const filteredServiceCategories = serviceCategories
+    .map(category => {
+      // Filter services within each category
+      const filteredServices = category.services.filter(service => {
+        const matchesSearch = 
+          service.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
+          service.description.toLowerCase().includes(searchQuery.toLowerCase());
+        return matchesSearch;
+      });
+
+      return {
+        ...category,
+        services: filteredServices
+      };
+    })
+    .filter(category => {
+      // Filter by selected category
+      const matchesCategory = selectedCategory === 'all' || category.category === selectedCategory;
+      // Only show categories that have services after search filtering
+      return matchesCategory && category.services.length > 0;
+    });
+
   return (
     <div>
       {/* Hero Banner */}
@@ -1044,10 +1071,55 @@ export default function Services() {
         </div>
       </section>
 
+      {/* Search and Filter */}
+      <section className="bg-white border-b sticky top-20 z-40">
+        <div className="max-w-7xl mx-auto px-4 py-6">
+          <div className="flex flex-col md:flex-row gap-4 items-center justify-between">
+            {/* Search Bar */}
+            <div className="w-full md:w-96">
+              <div className="relative">
+                <input
+                  type="text"
+                  placeholder="Search services..."
+                  value={searchQuery}
+                  onChange={(e) => setSearchQuery(e.target.value)}
+                  className="w-full px-4 py-3 pl-10 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-gold-primary"
+                />
+                <svg className="absolute left-3 top-3.5 w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                </svg>
+              </div>
+            </div>
+
+            {/* Category Filter */}
+            <div className="flex flex-wrap gap-2 justify-center">
+              {allCategories.map(category => (
+                <button
+                  key={category}
+                  onClick={() => setSelectedCategory(category)}
+                  className={`px-4 py-2 rounded-full font-semibold transition text-sm ${
+                    selectedCategory === category
+                      ? 'bg-gold-gradient text-white'
+                      : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
+                  }`}
+                >
+                  {category === 'all' ? 'All Services' : category}
+                </button>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Service Categories */}
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-4">
-          {serviceCategories.map((category, catIdx) => (
+          {filteredServiceCategories.length === 0 ? (
+            <div className="text-center py-16">
+              <p className="text-gray-500 text-xl">No services found matching your search.</p>
+            </div>
+          ) : (
+            filteredServiceCategories.map((category, catIdx) => (
             <div key={catIdx} className="mb-16">
               <h2 className="text-3xl font-bold mb-8 text-gold-primary border-b-2 border-gold-primary pb-2">
                 {category.category}
@@ -1081,7 +1153,8 @@ export default function Services() {
                 })}
               </div>
             </div>
-          ))}
+          ))
+          )}
         </div>
       </section>
 
