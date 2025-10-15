@@ -7,19 +7,75 @@ export default function Portfolio() {
   const [selectedMedia, setSelectedMedia] = useState(null);
 
   const beforeAfterPhotos = [
-    { id: 1, service: 'Botox', title: 'Forehead Lines Reduction', before: '', after: '' },
-    { id: 2, service: 'Morpheus8', title: 'Skin Tightening', before: '', after: '' },
-    { id: 3, service: 'Fillers', title: 'Lip Enhancement', before: '', after: '' },
-    { id: 4, service: 'Laser', title: 'Pigmentation Treatment', before: '', after: '' },
-    { id: 5, service: 'Botox', title: 'Crows Feet Treatment', before: '', after: '' },
-    { id: 6, service: 'Morpheus8', title: 'Face Contouring', before: '', after: '' },
+    { 
+      id: 1, 
+      service: 'Botox', 
+      title: 'Forehead Lines Reduction', 
+      before: 'https://images.unsplash.com/photo-1560750588-73207b1ef5b8?w=600&q=80', 
+      after: 'https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?w=600&q=80' 
+    },
+    { 
+      id: 2, 
+      service: 'Morpheus8', 
+      title: 'Skin Tightening', 
+      before: 'https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?w=600&q=80', 
+      after: 'https://images.unsplash.com/photo-1515377905703-c4788e51af15?w=600&q=80' 
+    },
+    { 
+      id: 3, 
+      service: 'Fillers', 
+      title: 'Lip Enhancement', 
+      before: 'https://images.unsplash.com/photo-1614252368970-c1b3d43e8ccd?w=600&q=80', 
+      after: 'https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?w=600&q=80' 
+    },
+    { 
+      id: 4, 
+      service: 'Laser', 
+      title: 'Pigmentation Treatment', 
+      before: 'https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=600&q=80', 
+      after: 'https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=600&q=80' 
+    },
+    { 
+      id: 5, 
+      service: 'Botox', 
+      title: 'Crows Feet Treatment', 
+      before: 'https://images.unsplash.com/photo-1522338242992-e1a54906a8da?w=600&q=80', 
+      after: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=600&q=80' 
+    },
+    { 
+      id: 6, 
+      service: 'Morpheus8', 
+      title: 'Face Contouring', 
+      before: 'https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=600&q=80', 
+      after: 'https://images.unsplash.com/photo-1509967419530-da38b4704bc6?w=600&q=80' 
+    },
   ];
 
   const treatmentVideos = [
-    { id: 1, title: 'Morpheus8 Treatment Process', thumbnail: '', videoUrl: '' },
-    { id: 2, title: 'Botox Injection Technique', thumbnail: '', videoUrl: '' },
-    { id: 3, title: 'HydraFacial Experience', thumbnail: '', videoUrl: '' },
-    { id: 4, title: 'Laser Hair Removal', thumbnail: '', videoUrl: '' },
+    { 
+      id: 1, 
+      title: 'Morpheus8 Treatment Process', 
+      thumbnail: 'https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?w=600&q=80', 
+      videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ' 
+    },
+    { 
+      id: 2, 
+      title: 'Botox Injection Technique', 
+      thumbnail: 'https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=600&q=80', 
+      videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ' 
+    },
+    { 
+      id: 3, 
+      title: 'HydraFacial Experience', 
+      thumbnail: 'https://images.unsplash.com/photo-1560750588-73207b1ef5b8?w=600&q=80', 
+      videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ' 
+    },
+    { 
+      id: 4, 
+      title: 'Laser Hair Removal', 
+      thumbnail: 'https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=600&q=80', 
+      videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ' 
+    },
   ];
 
   const serviceTypes = ['all', 'Botox', 'Morpheus8', 'Fillers', 'Laser'];
@@ -96,11 +152,13 @@ export default function Portfolio() {
                   className="bg-white rounded-lg shadow-md overflow-hidden cursor-pointer hover:shadow-xl transition"
                 >
                   <div className="flex">
-                    <div className="w-1/2 bg-gray-300 h-64 flex items-center justify-center">
-                      <span className="text-gray-600 font-semibold">Before</span>
+                    <div className="w-1/2 h-64 relative">
+                      <img src={photo.before} alt="Before" className="w-full h-full object-cover" />
+                      <span className="absolute bottom-2 left-2 bg-black/70 text-white px-2 py-1 rounded text-sm font-semibold">Before</span>
                     </div>
-                    <div className="w-1/2 bg-gray-200 h-64 flex items-center justify-center">
-                      <span className="text-gray-600 font-semibold">After</span>
+                    <div className="w-1/2 h-64 relative">
+                      <img src={photo.after} alt="After" className="w-full h-full object-cover" />
+                      <span className="absolute bottom-2 right-2 bg-black/70 text-white px-2 py-1 rounded text-sm font-semibold">After</span>
                     </div>
                   </div>
                   <div className="p-4">
@@ -127,15 +185,15 @@ export default function Portfolio() {
                   onClick={() => setSelectedMedia({ type: 'video', data: video })}
                   className="bg-white rounded-lg shadow-md overflow-hidden cursor-pointer hover:shadow-xl transition"
                 >
-                  <div className="relative bg-gray-300 h-64 flex items-center justify-center">
-                    <div className="absolute inset-0 flex items-center justify-center">
+                  <div className="relative h-64">
+                    <img src={video.thumbnail} alt={video.title} className="w-full h-full object-cover" />
+                    <div className="absolute inset-0 flex items-center justify-center bg-black/30 hover:bg-black/40 transition">
                       <div className="w-16 h-16 bg-gold-gradient rounded-full flex items-center justify-center">
-                        <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+                        <svg className="w-8 h-8 text-white ml-1" fill="currentColor" viewBox="0 0 20 20">
                           <path d="M6.3 2.841A1.5 1.5 0 004 4.11V15.89a1.5 1.5 0 002.3 1.269l9.344-5.89a1.5 1.5 0 000-2.538L6.3 2.84z" />
                         </svg>
                       </div>
                     </div>
-                    <span className="text-gray-600 font-semibold">Video Thumbnail</span>
                   </div>
                   <div className="p-4">
                     <h3 className="font-bold text-lg">{video.title}</h3>
@@ -166,17 +224,13 @@ export default function Portfolio() {
             {selectedMedia.type === 'photo' ? (
               <div className="bg-white rounded-lg overflow-hidden">
                 <div className="flex">
-                  <div className="w-1/2 bg-gray-300 h-96 flex items-center justify-center">
-                    <div className="text-center">
-                      <span className="text-gray-600 font-semibold block mb-2">Before</span>
-                      <span className="text-gray-500 text-sm">Image Placeholder</span>
-                    </div>
+                  <div className="w-1/2 h-96 relative">
+                    <img src={selectedMedia.data.before} alt="Before" className="w-full h-full object-cover" />
+                    <span className="absolute bottom-4 left-4 bg-black/70 text-white px-3 py-2 rounded text-lg font-semibold">Before</span>
                   </div>
-                  <div className="w-1/2 bg-gray-200 h-96 flex items-center justify-center">
-                    <div className="text-center">
-                      <span className="text-gray-600 font-semibold block mb-2">After</span>
-                      <span className="text-gray-500 text-sm">Image Placeholder</span>
-                    </div>
+                  <div className="w-1/2 h-96 relative">
+                    <img src={selectedMedia.data.after} alt="After" className="w-full h-full object-cover" />
+                    <span className="absolute bottom-4 right-4 bg-black/70 text-white px-3 py-2 rounded text-lg font-semibold">After</span>
                   </div>
                 </div>
                 <div className="p-6">
@@ -188,13 +242,17 @@ export default function Portfolio() {
               </div>
             ) : (
               <div className="bg-white rounded-lg overflow-hidden">
-                <div className="bg-gray-900 h-96 flex items-center justify-center">
-                  <div className="text-center text-white">
-                    <svg className="w-20 h-20 mx-auto mb-4" fill="currentColor" viewBox="0 0 20 20">
-                      <path d="M6.3 2.841A1.5 1.5 0 004 4.11V15.89a1.5 1.5 0 002.3 1.269l9.344-5.89a1.5 1.5 0 000-2.538L6.3 2.84z" />
-                    </svg>
-                    <p className="text-gray-400">Video Player Placeholder</p>
-                  </div>
+                <div className="aspect-video">
+                  <iframe
+                    width="100%"
+                    height="100%"
+                    src={selectedMedia.data.videoUrl}
+                    title={selectedMedia.data.title}
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                    className="w-full h-full"
+                  ></iframe>
                 </div>
                 <div className="p-6">
                   <h3 className="text-2xl font-bold">{selectedMedia.data.title}</h3>

@@ -178,7 +178,7 @@ export default function Contact() {
 
                 <button
                   type="submit"
-                  className="w-full bg-instagram-blue text-white px-6 py-4 rounded-lg font-semibold text-lg hover:bg-opacity-90 transition"
+                  className="w-full bg-gold-gradient text-white px-6 py-4 rounded-lg font-semibold text-lg hover:opacity-90 transition"
                 >
                   Send Message
                 </button>
@@ -255,11 +255,11 @@ export default function Contact() {
       </section>
 
       {/* Online Booking CTA */}
-      <section className="bg-instagram-blue text-white py-16">
+      <section className="bg-gold-gradient text-white py-16">
         <div className="max-w-4xl mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold mb-4">Prefer to Book Online?</h2>
           <p className="text-xl mb-8">Schedule your appointment instantly through our secure booking portal</p>
-          <button className="bg-white text-instagram-blue px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-100 transition">
+          <button className="bg-white text-purple-primary px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-100 transition">
             Book Online Instantly
           </button>
         </div>

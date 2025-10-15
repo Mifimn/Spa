@@ -1,15 +1,23 @@
+
 import { Link } from 'react-router-dom';
 
 export default function Home() {
   return (
     <div>
       {/* Hero Section */}
-      <section className="relative h-screen bg-gradient-to-br from-gray-900 to-gray-800 flex items-center justify-center text-white">
-        <div className="absolute inset-0 bg-black opacity-40"></div>
+      <section className="relative h-screen bg-gradient-to-br from-gray-900 to-gray-800 flex items-center justify-center text-white overflow-hidden">
+        <div className="absolute inset-0">
+          <img 
+            src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=1920&q=80" 
+            alt="Luxury spa interior"
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-purple-primary/50"></div>
+        </div>
         <div className="relative z-10 text-center px-4">
           <h1 className="text-5xl md:text-7xl font-bold mb-6">Doctor Led. Confidently You.</h1>
           <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">VCP Laser & Aesthetics offers premier medical aesthetics and wellness in a safe, professional environment.</p>
-          <button className="bg-instagram-blue text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-opacity-90 transition">
+          <button className="bg-gold-gradient text-white px-8 py-4 rounded-lg text-lg font-semibold hover:opacity-90 transition">
             Book a Consultation
           </button>
         </div>
@@ -56,16 +64,34 @@ export default function Home() {
           <h2 className="text-4xl font-bold text-center mb-12">Featured Services</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {[
-              { name: 'Botox', desc: 'Smooth wrinkles and fine lines with precision injections' },
-              { name: 'Morpheus8', desc: 'Revolutionary skin tightening and contouring' },
-              { name: 'Dental Aesthetics', desc: 'Enhance your smile with professional care' },
-              { name: 'Advanced Facials', desc: 'Customized treatments for radiant skin' }
+              { 
+                name: 'Botox', 
+                desc: 'Smooth wrinkles and fine lines with precision injections',
+                img: 'https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=400&q=80'
+              },
+              { 
+                name: 'Morpheus8', 
+                desc: 'Revolutionary skin tightening and contouring',
+                img: 'https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=400&q=80'
+              },
+              { 
+                name: 'Dental Aesthetics', 
+                desc: 'Enhance your smile with professional care',
+                img: 'https://images.unsplash.com/photo-1606811971618-4486d14f3f99?w=400&q=80'
+              },
+              { 
+                name: 'Advanced Facials', 
+                desc: 'Customized treatments for radiant skin',
+                img: 'https://images.unsplash.com/photo-1560750588-73207b1ef5b8?w=400&q=80'
+              }
             ].map((service, idx) => (
-              <div key={idx} className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition">
-                <div className="w-12 h-12 bg-gold-gradient rounded-lg mb-4"></div>
-                <h3 className="text-xl font-bold mb-2">{service.name}</h3>
-                <p className="text-gray-600 mb-4">{service.desc}</p>
-                <Link to="/services" className="text-gold-gradient font-semibold hover:underline">Learn More →</Link>
+              <div key={idx} className="bg-white rounded-lg shadow-md hover:shadow-xl transition overflow-hidden">
+                <img src={service.img} alt={service.name} className="w-full h-48 object-cover" />
+                <div className="p-6">
+                  <h3 className="text-xl font-bold mb-2">{service.name}</h3>
+                  <p className="text-gray-600 mb-4">{service.desc}</p>
+                  <Link to="/services" className="text-purple-primary font-semibold hover:underline">Learn More →</Link>
+                </div>
               </div>
             ))}
           </div>
@@ -102,11 +128,15 @@ export default function Home() {
       <section className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4">
           <div className="flex flex-col md:flex-row items-center gap-12">
-            <div className="w-64 h-64 bg-gray-300 rounded-lg flex-shrink-0"></div>
+            <img 
+              src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=400&q=80" 
+              alt="Dr. Smith"
+              className="w-64 h-64 rounded-lg object-cover shadow-lg"
+            />
             <div>
               <h2 className="text-4xl font-bold mb-4">Meet Dr. Smith</h2>
               <p className="text-gray-700 text-lg mb-4">With over 15 years of experience in aesthetic medicine, Dr. Smith brings expertise and artistry to every treatment. Board-certified and passionate about helping clients achieve their aesthetic goals, Dr. Smith leads our team with a commitment to safety, natural results, and personalized care.</p>
-              <Link to="/contact" className="inline-block bg-gold-gradient text-white px-6 py-3 rounded-lg font-semibold hover:bg-opacity-90 transition">
+              <Link to="/contact" className="inline-block bg-gold-gradient text-white px-6 py-3 rounded-lg font-semibold hover:opacity-90 transition">
                 Our Team
               </Link>
             </div>
@@ -120,11 +150,15 @@ export default function Home() {
           <h2 className="text-4xl font-bold text-center mb-12">Latest From Our Blog</h2>
           <div className="max-w-4xl mx-auto bg-gray-50 rounded-lg overflow-hidden shadow-md hover:shadow-xl transition">
             <div className="md:flex">
-              <div className="md:w-1/3 bg-gray-300 h-64 md:h-auto"></div>
+              <img 
+                src="https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?w=600&q=80" 
+                alt="Morpheus8 treatment"
+                className="md:w-1/3 w-full h-64 md:h-auto object-cover"
+              />
               <div className="p-8 md:w-2/3">
                 <h3 className="text-2xl font-bold mb-3">The Ultimate Guide to Morpheus8 Treatment</h3>
                 <p className="text-gray-600 mb-4">Discover how this revolutionary treatment can transform your skin with minimal downtime and maximum results...</p>
-                <Link to="/blog" className="text-gold-gradient font-semibold hover:underline">Read More →</Link>
+                <Link to="/blog" className="text-purple-primary font-semibold hover:underline">Read More →</Link>
               </div>
             </div>
           </div>

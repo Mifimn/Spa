@@ -16,7 +16,7 @@ export default function Blog() {
       author: 'Dr. Smith',
       date: 'March 15, 2024',
       excerpt: 'Discover how this revolutionary treatment can transform your skin with minimal downtime and maximum results. Learn about the science behind Morpheus8...',
-      thumbnail: ''
+      thumbnail: 'https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?w=600&q=80'
     },
     {
       id: 2,
@@ -25,7 +25,7 @@ export default function Blog() {
       author: 'Dr. Smith',
       date: 'March 10, 2024',
       excerpt: 'Understanding the key differences between popular neurotoxin treatments to help you make an informed decision for your aesthetic goals...',
-      thumbnail: ''
+      thumbnail: 'https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=600&q=80'
     },
     {
       id: 3,
@@ -34,7 +34,7 @@ export default function Blog() {
       author: 'Sarah Chen, Aesthetician',
       date: 'March 5, 2024',
       excerpt: 'As the seasons change, so should your skincare routine. Here are our expert tips for maintaining radiant skin this spring...',
-      thumbnail: ''
+      thumbnail: 'https://images.unsplash.com/photo-1560750588-73207b1ef5b8?w=600&q=80'
     },
     {
       id: 4,
@@ -43,7 +43,7 @@ export default function Blog() {
       author: 'Dr. Smith',
       date: 'February 28, 2024',
       excerpt: 'Chemical peels can dramatically improve skin texture and tone. Learn which peel is right for your skin concerns...',
-      thumbnail: ''
+      thumbnail: 'https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=600&q=80'
     },
     {
       id: 5,
@@ -52,7 +52,7 @@ export default function Blog() {
       author: 'Jennifer Lee, RN',
       date: 'February 20, 2024',
       excerpt: 'Everything you need to know before your first laser hair removal session, from preparation to aftercare...',
-      thumbnail: ''
+      thumbnail: 'https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=600&q=80'
     },
     {
       id: 6,
@@ -61,7 +61,7 @@ export default function Blog() {
       author: 'Dr. Smith',
       date: 'February 15, 2024',
       excerpt: 'Why professional skincare products deliver better results than over-the-counter alternatives...',
-      thumbnail: ''
+      thumbnail: 'https://images.unsplash.com/photo-1515377905703-c4788e51af15?w=600&q=80'
     },
   ];
 
@@ -142,8 +142,8 @@ export default function Blog() {
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 {paginatedPosts.map(post => (
                   <article key={post.id} className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition">
-                    <div className="bg-gray-300 h-48 flex items-center justify-center">
-                      <span className="text-gray-600">Article Thumbnail</span>
+                    <div className="h-48 overflow-hidden">
+                      <img src={post.thumbnail} alt={post.title} className="w-full h-full object-cover" />
                     </div>
                     <div className="p-6">
                       <span className="inline-block bg-gold-gradient text-white text-xs px-3 py-1 rounded-full mb-3">
