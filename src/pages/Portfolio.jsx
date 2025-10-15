@@ -17,7 +17,7 @@ export default function Portfolio() {
     { 
       id: 2, 
       service: 'Morpheus8', 
-      title: 'Skin Tightening', 
+      title: 'Full Face Skin Tightening', 
       before: 'https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?w=600&q=80', 
       after: 'https://images.unsplash.com/photo-1515377905703-c4788e51af15?w=600&q=80' 
     },
@@ -31,30 +31,51 @@ export default function Portfolio() {
     { 
       id: 4, 
       service: 'Laser', 
-      title: 'Pigmentation Treatment', 
+      title: 'Full Face Laser Treatment', 
       before: 'https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=600&q=80', 
       after: 'https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=600&q=80' 
     },
     { 
       id: 5, 
-      service: 'Botox', 
-      title: 'Crows Feet Treatment', 
-      before: 'https://images.unsplash.com/photo-1522338242992-e1a54906a8da?w=600&q=80', 
-      after: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=600&q=80' 
+      service: 'Dental', 
+      title: 'Teeth Whitening Results', 
+      before: 'https://images.unsplash.com/photo-1606811971618-4486d14f3f99?w=600&q=80', 
+      after: 'https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=600&q=80' 
     },
     { 
       id: 6, 
       service: 'Morpheus8', 
-      title: 'Face Contouring', 
+      title: 'Jawline Contouring', 
       before: 'https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=600&q=80', 
       after: 'https://images.unsplash.com/photo-1509967419530-da38b4704bc6?w=600&q=80' 
+    },
+    { 
+      id: 7, 
+      service: 'Facial', 
+      title: 'VCP Celebrity Facial', 
+      before: 'https://images.unsplash.com/photo-1522338242992-e1a54906a8da?w=600&q=80', 
+      after: 'https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=600&q=80' 
+    },
+    { 
+      id: 8, 
+      service: 'PRP', 
+      title: 'Vampire Facial Results', 
+      before: 'https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?w=600&q=80', 
+      after: 'https://images.unsplash.com/photo-1560750588-73207b1ef5b8?w=600&q=80' 
+    },
+    { 
+      id: 9, 
+      service: 'Laser', 
+      title: 'Laser Cellulite Treatment', 
+      before: 'https://images.unsplash.com/photo-1515377905703-c4788e51af15?w=600&q=80', 
+      after: 'https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=600&q=80' 
     },
   ];
 
   const treatmentVideos = [
     { 
       id: 1, 
-      title: 'Morpheus8 Treatment Process', 
+      title: 'Morpheus8 Full Face Treatment', 
       thumbnail: 'https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?w=600&q=80', 
       videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ' 
     },
@@ -66,19 +87,31 @@ export default function Portfolio() {
     },
     { 
       id: 3, 
-      title: 'HydraFacial Experience', 
+      title: 'VCP Celebrity Facial Experience', 
       thumbnail: 'https://images.unsplash.com/photo-1560750588-73207b1ef5b8?w=600&q=80', 
       videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ' 
     },
     { 
       id: 4, 
-      title: 'Laser Hair Removal', 
+      title: 'Full Body Laser Treatment', 
+      thumbnail: 'https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=600&q=80', 
+      videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ' 
+    },
+    { 
+      id: 5, 
+      title: 'Dental Whitening Procedure', 
+      thumbnail: 'https://images.unsplash.com/photo-1606811971618-4486d14f3f99?w=600&q=80', 
+      videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ' 
+    },
+    { 
+      id: 6, 
+      title: 'PRP Vampire Facial', 
       thumbnail: 'https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=600&q=80', 
       videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ' 
     },
   ];
 
-  const serviceTypes = ['all', 'Botox', 'Morpheus8', 'Fillers', 'Laser'];
+  const serviceTypes = ['all', 'Botox', 'Morpheus8', 'Fillers', 'Laser', 'Dental', 'Facial', 'PRP'];
 
   const filteredPhotos = selectedFilter === 'all' 
     ? beforeAfterPhotos 

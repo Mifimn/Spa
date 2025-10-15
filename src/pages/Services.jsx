@@ -6,118 +6,1021 @@ export default function Services() {
 
   const serviceCategories = [
     {
-      category: 'Aesthetic Injectables',
+      category: 'VCP Spa Packages',
       services: [
         {
-          name: 'Botox',
-          price: 'Starting from ₦18,500/unit',
-          description: 'Reduce fine lines and wrinkles with FDA-approved neurotoxin injections.',
-          details: 'Botox works by temporarily relaxing facial muscles that cause wrinkles. Results typically last 3-4 months. Treatment takes 10-15 minutes with no downtime.',
-          image: 'https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=400&q=80'
+          name: 'The Bridal Glow Package',
+          price: '₦465,500',
+          duration: '6 hrs, 15 mins',
+          description: '7 services designed for your special day (Save 5%)',
+          image: 'https://images.unsplash.com/photo-1519415387722-a1c3bbef716c?w=400&q=80'
         },
         {
-          name: 'Dermal Fillers',
-          price: 'Starting from ₦1,000,000/syringe',
-          description: 'Restore volume and contour with hyaluronic acid fillers.',
-          details: 'Our range of premium fillers can enhance lips, cheeks, and smooth deep lines. Results are immediate and can last 6-18 months depending on the product.',
-          image: 'https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?w=400&q=80'
-        },
-        {
-          name: 'Kybella',
-          price: 'Starting from ₦1,230,000/session',
-          description: 'Non-surgical double chin reduction treatment.',
-          details: 'FDA-approved injectable that destroys fat cells under the chin. Most patients need 2-4 treatments spaced 4-6 weeks apart.',
-          image: 'https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?w=400&q=80'
-        }
-      ]
-    },
-    {
-      category: 'Non-Surgical Lifting & Tightening',
-      services: [
-        {
-          name: 'Morpheus8',
-          price: 'Starting from ₦1,845,000/session',
-          description: 'Revolutionary microneedling with radiofrequency for skin tightening.',
-          details: 'Combines microneedling with RF energy to remodel collagen and tighten skin. Treats face, neck, and body. 3-4 sessions recommended for optimal results.',
-          image: 'https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?w=400&q=80'
-        },
-        {
-          name: 'Ultherapy',
-          price: 'Starting from ₦3,845,000/treatment',
-          description: 'Ultrasound-based non-surgical facelift.',
-          details: 'Uses focused ultrasound to lift and tighten skin on the face, neck, and décolletage. Results develop over 2-3 months and can last up to 2 years.',
-          image: 'https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=400&q=80'
-        }
-      ]
-    },
-    {
-      category: 'Laser Treatments',
-      services: [
-        {
-          name: 'Laser Hair Removal',
-          price: 'Starting from ₦230,000/session',
-          description: 'Permanent hair reduction using advanced Candela technology.',
-          details: 'Safe for all skin types. Most areas require 6-8 treatments spaced 4-6 weeks apart. Virtually painless with our cooling system.',
-          image: 'https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=400&q=80'
-        },
-        {
-          name: 'Laser Skin Resurfacing',
-          price: 'Starting from ₦1,230,000/session',
-          description: 'Improve skin texture, tone, and reduce scarring.',
-          details: 'Fractional CO2 laser treatment for dramatic skin renewal. Addresses wrinkles, sun damage, acne scars, and uneven texture.',
-          image: 'https://images.unsplash.com/photo-1515377905703-c4788e51af15?w=400&q=80'
-        },
-        {
-          name: 'IPL Photofacial',
-          price: 'Starting from ₦615,000/session',
-          description: 'Treat sun damage, redness, and pigmentation.',
-          details: 'Intense pulsed light therapy that targets brown spots, redness, and broken capillaries. No downtime. 3-5 sessions recommended.',
-          image: 'https://images.unsplash.com/photo-1614252368970-c1b3d43e8ccd?w=400&q=80'
-        }
-      ]
-    },
-    {
-      category: 'Advanced Facials & Skincare',
-      services: [
-        {
-          name: 'HydraFacial',
-          price: '₦385,000/session',
-          description: 'Deep cleansing, exfoliation, and hydration treatment.',
-          details: 'Patented technology that cleanses, extracts, and hydrates skin. Immediate results with no downtime. Perfect before special events.',
+          name: 'The Special Event Prep Package',
+          price: '₦375,250',
+          duration: '5 hrs, 15 mins',
+          description: '6 services to prepare you for any special occasion (Save 5%)',
           image: 'https://images.unsplash.com/photo-1560750588-73207b1ef5b8?w=400&q=80'
         },
         {
-          name: 'Medical Grade Peels',
-          price: 'Starting from ₦230,000/session',
-          description: 'Customized chemical peels for various skin concerns.',
-          details: 'Range from light to deep peels addressing acne, pigmentation, and aging. Tailored to your specific skin type and goals.',
-          image: 'https://images.unsplash.com/photo-1522338242992-e1a54906a8da?w=400&q=80'
+          name: 'The Gentleman\'s Glow Package',
+          price: '₦389,500',
+          duration: '5 hrs, 50 mins',
+          description: '7 services tailored for men (Save 5%)',
+          image: 'https://images.unsplash.com/photo-1621607512214-68297480165e?w=400&q=80'
         },
         {
-          name: 'Microneedling',
-          price: 'Starting from ₦538,000/session',
-          description: 'Collagen induction therapy for smoother, firmer skin.',
-          details: 'Stimulates natural collagen production to improve texture, reduce scarring, and minimize pores. 3-6 sessions recommended.',
-          image: 'https://images.unsplash.com/photo-1594312915251-48db9280c8f1?w=400&q=80'
+          name: 'The Holiday Prep Package',
+          price: '₦342,000',
+          duration: '5 hrs, 5 mins',
+          description: '6 services to get you holiday-ready (Save 5%)',
+          image: 'https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=400&q=80'
+        },
+        {
+          name: 'The Self Love Package',
+          price: '₦256,500',
+          duration: '4 hrs, 15 mins',
+          description: '5 services for ultimate self-care (Save 5%)',
+          image: 'https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=400&q=80'
+        },
+        {
+          name: 'The Serenity Glow Package',
+          price: '₦209,000',
+          duration: '3 hrs, 15 mins',
+          description: '4 services for pure relaxation (Save 5%)',
+          image: 'https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=400&q=80'
         }
       ]
     },
     {
-      category: 'Dental Aesthetics',
+      category: 'Facial Procedures',
       services: [
         {
-          name: 'Teeth Whitening',
-          price: 'Starting from ₦770,000',
-          description: 'Professional-grade whitening for a brighter smile.',
-          details: 'In-office treatment that can lighten teeth up to 8 shades in one session. Results last 1-2 years with proper care.',
+          name: 'VCP Celebrity Facial',
+          price: '₦85,000',
+          duration: '1 hr',
+          description: 'Our signature celebrity-grade facial treatment',
+          image: 'https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=400&q=80'
+        },
+        {
+          name: 'Hydra Glow Facial',
+          price: '₦100,000',
+          duration: '1 hr',
+          description: 'Deep hydration for luminous skin',
+          image: 'https://images.unsplash.com/photo-1560750588-73207b1ef5b8?w=400&q=80'
+        },
+        {
+          name: 'Glow Peel Facial',
+          price: '₦80,000',
+          duration: '1 hr',
+          description: 'Chemical peel for radiant complexion',
+          image: 'https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?w=400&q=80'
+        },
+        {
+          name: 'Advanced Acne Facial',
+          price: '₦75,000',
+          duration: '1 hr',
+          description: 'Targeted treatment for acne-prone skin',
+          image: 'https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?w=400&q=80'
+        },
+        {
+          name: 'Rejuvenating Facial',
+          price: '₦65,000',
+          duration: '1 hr',
+          description: 'Revitalize and refresh your skin',
+          image: 'https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?w=400&q=80'
+        },
+        {
+          name: 'Purifying Acne Facial',
+          price: '₦65,000',
+          duration: '1 hr',
+          description: 'Deep cleansing for clear skin',
+          image: 'https://images.unsplash.com/photo-1522338242992-e1a54906a8da?w=400&q=80'
+        },
+        {
+          name: 'Signature Hydrating Facial',
+          price: '₦80,000',
+          duration: '1 hr',
+          description: 'Intense moisture boost',
+          image: 'https://images.unsplash.com/photo-1515377905703-c4788e51af15?w=400&q=80'
+        },
+        {
+          name: 'Dermaplanning',
+          price: '₦60,000',
+          duration: '1 hr',
+          description: 'Gentle exfoliation for smooth skin',
+          image: 'https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=400&q=80'
+        },
+        {
+          name: 'Deep Cleansing Facial',
+          price: '₦35,000',
+          duration: '1 hr',
+          description: 'Thorough pore cleansing',
+          image: 'https://images.unsplash.com/photo-1594312915251-48db9280c8f1?w=400&q=80'
+        },
+        {
+          name: 'Brightening Facial',
+          price: '₦50,000',
+          duration: '1 hr',
+          description: 'Illuminate dull complexion',
+          image: 'https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?w=400&q=80'
+        },
+        {
+          name: 'Anti-Aging Facial',
+          price: '₦90,000',
+          duration: '1 hr',
+          description: 'Combat signs of aging',
+          image: 'https://images.unsplash.com/photo-1614252368970-c1b3d43e8ccd?w=400&q=80'
+        },
+        {
+          name: 'Chemical Peel',
+          price: '₦100,000',
+          duration: '1 hr',
+          description: 'Advanced skin resurfacing',
+          image: 'https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=400&q=80'
+        },
+        {
+          name: 'Microneedling with PRP',
+          price: '₦120,000',
+          duration: '1 hr',
+          description: 'Collagen induction with platelet-rich plasma',
+          image: 'https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=400&q=80'
+        },
+        {
+          name: 'Microneedling with Amitone Brightening',
+          price: '₦150,000',
+          duration: '1 hr',
+          description: 'Advanced brightening treatment',
+          image: 'https://images.unsplash.com/photo-1560750588-73207b1ef5b8?w=400&q=80'
+        },
+        {
+          name: 'Microneedling with Serum',
+          price: '₦90,000',
+          duration: '1 hr',
+          description: 'Microneedling with specialized serums',
+          image: 'https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?w=400&q=80'
+        },
+        {
+          name: 'Mesotherapy with PRP',
+          price: '₦150,000',
+          duration: '1 hr',
+          description: 'Skin rejuvenation with PRP',
+          image: 'https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?w=400&q=80'
+        },
+        {
+          name: 'Mesotherapy with Serum',
+          price: '₦100,000',
+          duration: '1 hr',
+          description: 'Targeted skin therapy',
+          image: 'https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?w=400&q=80'
+        }
+      ]
+    },
+    {
+      category: 'Massage',
+      services: [
+        {
+          name: 'Signature Twin Massage',
+          price: '₦100,000',
+          duration: '1 hr',
+          description: 'Couples massage experience',
+          image: 'https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=400&q=80'
+        },
+        {
+          name: 'VCP Signature Massage',
+          price: '₦100,000',
+          duration: '1 hr',
+          description: 'Our exclusive massage technique',
+          image: 'https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=400&q=80'
+        },
+        {
+          name: 'Deep Tissue Massage',
+          price: '₦60,000',
+          duration: '1 hr',
+          description: 'Relieve muscle tension',
+          image: 'https://images.unsplash.com/photo-1519415387722-a1c3bbef716c?w=400&q=80'
+        },
+        {
+          name: 'Relaxation Massage',
+          price: '₦50,000',
+          duration: '1 hr',
+          description: 'Gentle, soothing massage',
+          image: 'https://images.unsplash.com/photo-1600334129128-685c5582fd35?w=400&q=80'
+        },
+        {
+          name: 'Aromatherapy Massage',
+          price: '₦60,000',
+          duration: '1 hr',
+          description: 'Massage with essential oils',
+          image: 'https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=400&q=80'
+        },
+        {
+          name: 'Swedish Massage',
+          price: '₦50,000',
+          duration: '1 hr',
+          description: 'Classic therapeutic massage',
+          image: 'https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=400&q=80'
+        },
+        {
+          name: 'Indian Head Massage',
+          price: '₦60,000',
+          duration: '1 hr',
+          description: 'Traditional scalp and shoulder massage',
+          image: 'https://images.unsplash.com/photo-1519415387722-a1c3bbef716c?w=400&q=80'
+        },
+        {
+          name: 'Prenatal Massage',
+          price: '₦90,000',
+          duration: '1 hr',
+          description: 'Safe massage for expectant mothers',
+          image: 'https://images.unsplash.com/photo-1600334129128-685c5582fd35?w=400&q=80'
+        },
+        {
+          name: 'Shoulder Massage',
+          price: '₦30,000',
+          duration: '30 mins',
+          description: 'Targeted shoulder relief',
+          image: 'https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=400&q=80'
+        },
+        {
+          name: 'Head Massage',
+          price: '₦30,000',
+          duration: '30 mins',
+          description: 'Relaxing scalp massage',
+          image: 'https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=400&q=80'
+        }
+      ]
+    },
+    {
+      category: 'Body Exfoliation & Sauna',
+      services: [
+        {
+          name: 'Revive Body Exfoliation',
+          price: '₦50,000',
+          duration: '45 mins',
+          description: 'Full body exfoliation treatment',
+          image: 'https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=400&q=80'
+        },
+        {
+          name: '24 Karat Radiant Glow Scrub',
+          price: '₦70,000',
+          duration: '45 mins',
+          description: 'Luxurious gold-infused body scrub',
+          image: 'https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=400&q=80'
+        },
+        {
+          name: 'Revive Brightening Scrub',
+          price: '₦60,000',
+          duration: '45 mins',
+          description: 'Brightening body exfoliation',
+          image: 'https://images.unsplash.com/photo-1519415387722-a1c3bbef716c?w=400&q=80'
+        },
+        {
+          name: 'Sauna',
+          price: '₦20,000',
+          duration: '30 mins',
+          description: 'Detoxifying sauna session',
+          image: 'https://images.unsplash.com/photo-1583416750470-965b2707b355?w=400&q=80'
+        }
+      ]
+    },
+    {
+      category: 'Laser Non-Surgical Procedures',
+      services: [
+        {
+          name: 'Full Body Laser',
+          price: '₦500,000',
+          duration: '1 hr',
+          description: 'Complete body laser treatment',
+          image: 'https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=400&q=80'
+        },
+        {
+          name: 'Full Buttocks Laser',
+          price: '₦100,000',
+          duration: '1 hr',
+          description: 'Laser hair removal for buttocks',
+          image: 'https://images.unsplash.com/photo-1515377905703-c4788e51af15?w=400&q=80'
+        },
+        {
+          name: 'Full Face Laser',
+          price: '₦80,000',
+          duration: '1 hr',
+          description: 'Facial laser hair removal',
+          image: 'https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?w=400&q=80'
+        },
+        {
+          name: 'Gentleman Laser',
+          price: '₦40,000',
+          duration: '1 hr',
+          description: 'Laser hair removal for men',
+          image: 'https://images.unsplash.com/photo-1621607512214-68297480165e?w=400&q=80'
+        },
+        {
+          name: 'Bikini Laser',
+          price: '₦50,000',
+          duration: '1 hr',
+          description: 'Bikini area laser treatment',
+          image: 'https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=400&q=80'
+        },
+        {
+          name: 'Keloid Removal',
+          price: '₦50,000',
+          duration: '1 hr',
+          description: 'Laser keloid scar treatment',
+          image: 'https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=400&q=80'
+        },
+        {
+          name: 'Laser Cellulite (Skin Tightening)',
+          price: '₦90,000',
+          duration: '1 hr',
+          description: 'Reduce cellulite and tighten skin',
+          image: 'https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=400&q=80'
+        },
+        {
+          name: 'Half Back Laser',
+          price: '₦70,000',
+          duration: '1 hr',
+          description: 'Upper or lower back treatment',
+          image: 'https://images.unsplash.com/photo-1515377905703-c4788e51af15?w=400&q=80'
+        },
+        {
+          name: 'Full Back Laser',
+          price: '₦125,000',
+          duration: '1 hr',
+          description: 'Complete back laser treatment',
+          image: 'https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=400&q=80'
+        },
+        {
+          name: 'Full Leg Laser',
+          price: '₦140,000',
+          duration: '1 hr',
+          description: 'Complete leg laser hair removal',
+          image: 'https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?w=400&q=80'
+        },
+        {
+          name: 'Underarm Laser',
+          price: '₦60,000',
+          duration: '1 hr',
+          description: 'Underarm hair removal',
+          image: 'https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=400&q=80'
+        },
+        {
+          name: 'Half Leg Laser',
+          price: '₦70,000',
+          duration: '1 hr',
+          description: 'Upper or lower leg treatment',
+          image: 'https://images.unsplash.com/photo-1515377905703-c4788e51af15?w=400&q=80'
+        },
+        {
+          name: 'Full Arm Laser',
+          price: '₦130,000',
+          duration: '1 hr',
+          description: 'Complete arm laser treatment',
+          image: 'https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?w=400&q=80'
+        },
+        {
+          name: 'Chest Laser',
+          price: '₦65,000',
+          duration: '1 hr',
+          description: 'Chest hair removal',
+          image: 'https://images.unsplash.com/photo-1621607512214-68297480165e?w=400&q=80'
+        },
+        {
+          name: 'Half Arm Laser',
+          price: '₦65,000',
+          duration: '1 hr',
+          description: 'Upper or lower arm treatment',
+          image: 'https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=400&q=80'
+        },
+        {
+          name: 'Brazilian (Full Pubic Area)',
+          price: '₦100,000',
+          duration: '1 hr',
+          description: 'Complete Brazilian laser',
+          image: 'https://images.unsplash.com/photo-1515377905703-c4788e51af15?w=400&q=80'
+        },
+        {
+          name: 'Lower Belly Laser',
+          price: '₦40,000',
+          duration: '1 hr',
+          description: 'Lower abdomen treatment',
+          image: 'https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=400&q=80'
+        },
+        {
+          name: 'Half Face Laser',
+          price: '₦45,000',
+          duration: '1 hr',
+          description: 'Partial facial laser',
+          image: 'https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?w=400&q=80'
+        },
+        {
+          name: 'Under Chin Laser',
+          price: '₦40,000',
+          duration: '1 hr',
+          description: 'Chin area hair removal',
+          image: 'https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=400&q=80'
+        },
+        {
+          name: 'Half Chest Laser',
+          price: '₦40,000',
+          duration: '1 hr',
+          description: 'Partial chest treatment',
+          image: 'https://images.unsplash.com/photo-1621607512214-68297480165e?w=400&q=80'
+        },
+        {
+          name: 'Full Abdomen Laser',
+          price: '₦50,000',
+          duration: '1 hr',
+          description: 'Complete abdominal treatment',
+          image: 'https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=400&q=80'
+        },
+        {
+          name: 'Hollywood Laser',
+          price: '₦160,000',
+          duration: '1 hr',
+          description: 'Complete intimate area laser',
+          image: 'https://images.unsplash.com/photo-1515377905703-c4788e51af15?w=400&q=80'
+        },
+        {
+          name: 'Skin Tag Removal',
+          price: '₦80,000',
+          duration: '1 hr',
+          description: 'Remove skin tags safely',
+          image: 'https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=400&q=80'
+        },
+        {
+          name: 'Laser Nail Fungus',
+          price: '₦40,000',
+          duration: '50 mins',
+          description: 'Treat nail fungus with laser',
+          image: 'https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=400&q=80'
+        }
+      ]
+    },
+    {
+      category: 'Injectables (Botox, Fillers, PRP)',
+      services: [
+        {
+          name: 'Medical Consultation',
+          price: '₦20,000',
+          duration: '45 mins',
+          description: 'Professional assessment and planning',
+          image: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=400&q=80'
+        },
+        {
+          name: 'Botox (per unit)',
+          price: '₦10,000',
+          duration: '1 hr',
+          description: 'Wrinkle reduction treatment',
+          image: 'https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=400&q=80'
+        },
+        {
+          name: 'Face Fillers',
+          price: '₦300,000',
+          duration: '1 hr',
+          description: 'Facial volume restoration',
+          image: 'https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?w=400&q=80'
+        },
+        {
+          name: 'Body Fillers',
+          price: '₦550,000',
+          duration: '1 hr',
+          description: 'Body contouring fillers',
+          image: 'https://images.unsplash.com/photo-1515377905703-c4788e51af15?w=400&q=80'
+        },
+        {
+          name: 'PRP - Hair Loss',
+          price: '₦100,000',
+          duration: '1 hr',
+          description: 'Hair restoration therapy',
+          image: 'https://images.unsplash.com/photo-1560750588-73207b1ef5b8?w=400&q=80'
+        },
+        {
+          name: 'PRP - Vampire Facial',
+          price: '₦120,000',
+          duration: '1 hr',
+          description: 'Skin rejuvenation with PRP',
+          image: 'https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?w=400&q=80'
+        },
+        {
+          name: 'PRP - O Shot',
+          price: '₦200,000',
+          duration: '1 hr',
+          description: 'Intimate wellness treatment',
+          image: 'https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=400&q=80'
+        },
+        {
+          name: 'PRP - Knee Shot',
+          price: '₦200,000',
+          duration: '1 hr',
+          description: 'Joint pain relief',
+          image: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=400&q=80'
+        },
+        {
+          name: 'PRP - Hip Dip',
+          price: '₦200,000',
+          duration: '1 hr',
+          description: 'Hip contouring treatment',
+          image: 'https://images.unsplash.com/photo-1515377905703-c4788e51af15?w=400&q=80'
+        },
+        {
+          name: 'PRP - Stretch Mark',
+          price: '₦100,000',
+          duration: '1 hr',
+          description: 'Reduce stretch mark appearance',
+          image: 'https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=400&q=80'
+        }
+      ]
+    },
+    {
+      category: 'IV Drips',
+      services: [
+        {
+          name: 'VCP Signature IV',
+          price: '₦200,000',
+          duration: '1 hr',
+          description: 'Our premium wellness drip',
+          image: 'https://images.unsplash.com/photo-1579154204601-01588f351e67?w=400&q=80'
+        },
+        {
+          name: 'Glutathione IV',
+          price: '₦100,000',
+          duration: '1 hr',
+          description: 'Skin brightening and antioxidant',
+          image: 'https://images.unsplash.com/photo-1579154204601-01588f351e67?w=400&q=80'
+        },
+        {
+          name: 'Detox IV',
+          price: '₦80,000',
+          duration: '45 mins',
+          description: 'Full body detoxification',
+          image: 'https://images.unsplash.com/photo-1579154204601-01588f351e67?w=400&q=80'
+        },
+        {
+          name: 'Immunity Booster',
+          price: '₦70,000',
+          duration: '50 mins',
+          description: 'Strengthen immune system',
+          image: 'https://images.unsplash.com/photo-1579154204601-01588f351e67?w=400&q=80'
+        },
+        {
+          name: 'Beauty Sleep',
+          price: '₦70,000',
+          duration: '50 mins',
+          description: 'Improve sleep quality',
+          image: 'https://images.unsplash.com/photo-1579154204601-01588f351e67?w=400&q=80'
+        },
+        {
+          name: 'Energy Booster',
+          price: '₦80,000',
+          duration: '1 hr',
+          description: 'Increase energy and vitality',
+          image: 'https://images.unsplash.com/photo-1579154204601-01588f351e67?w=400&q=80'
+        }
+      ]
+    },
+    {
+      category: 'Weight Loss',
+      services: [
+        {
+          name: 'Lipolysis Injection',
+          price: '₦100,000',
+          duration: '1 hr',
+          description: 'Fat dissolving treatment',
+          image: 'https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=400&q=80'
+        },
+        {
+          name: 'Ozempic Weight Loss',
+          price: '₦1,000,000',
+          duration: '1 hr',
+          description: 'Medical weight management',
+          image: 'https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=400&q=80'
+        }
+      ]
+    },
+    {
+      category: 'Morpheus Procedures',
+      services: [
+        {
+          name: 'Full Face Morpheus8',
+          price: '₦750,500',
+          duration: '1 hr, 30 mins',
+          description: 'Complete facial skin tightening',
+          image: 'https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?w=400&q=80'
+        },
+        {
+          name: 'Double Chin Morpheus8',
+          price: '₦450,000',
+          duration: '1 hr, 30 mins',
+          description: 'Submental contouring',
+          image: 'https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=400&q=80'
+        },
+        {
+          name: 'Jawline Morpheus8',
+          price: '₦550,000',
+          duration: '1 hr, 30 mins',
+          description: 'Jawline definition and tightening',
+          image: 'https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?w=400&q=80'
+        }
+      ]
+    },
+    {
+      category: 'Dental Procedures',
+      services: [
+        {
+          name: 'Dental Consultation',
+          price: '₦20,000',
+          duration: '50 mins',
+          description: 'Comprehensive dental assessment',
           image: 'https://images.unsplash.com/photo-1606811971618-4486d14f3f99?w=400&q=80'
         },
         {
-          name: 'Smile Makeover Consultation',
-          price: 'Complimentary',
-          description: 'Comprehensive assessment and treatment planning.',
-          details: 'Personalized consultation to discuss veneers, bonding, and other cosmetic dental options.',
+          name: 'Periapical X-ray',
+          price: '₦15,000',
+          duration: '20 mins',
+          description: 'Dental imaging',
           image: 'https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=400&q=80'
+        },
+        {
+          name: 'Diamond Teeth Cleaning',
+          price: '₦50,000',
+          duration: '30 mins',
+          description: 'Premium teeth cleaning',
+          image: 'https://images.unsplash.com/photo-1606811971618-4486d14f3f99?w=400&q=80'
+        },
+        {
+          name: 'Deep Teeth Cleaning',
+          price: '₦70,000',
+          duration: '45 mins',
+          description: 'Thorough professional cleaning',
+          image: 'https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=400&q=80'
+        },
+        {
+          name: 'Advanced Teeth Cleaning',
+          price: '₦90,000',
+          duration: '1 hr',
+          description: 'Comprehensive dental cleaning',
+          image: 'https://images.unsplash.com/photo-1606811971618-4486d14f3f99?w=400&q=80'
+        },
+        {
+          name: 'Diamond Teeth Whitening',
+          price: '₦100,000',
+          duration: '1 hr',
+          description: 'Professional whitening treatment',
+          image: 'https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=400&q=80'
+        },
+        {
+          name: 'Platinum Teeth Whitening',
+          price: '₦150,000',
+          duration: '1 hr, 30 mins',
+          description: 'Premium whitening service',
+          image: 'https://images.unsplash.com/photo-1606811971618-4486d14f3f99?w=400&q=80'
+        },
+        {
+          name: 'Dental Filling',
+          price: '₦50,000',
+          duration: '1 hr',
+          description: 'Cavity restoration',
+          image: 'https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=400&q=80'
+        },
+        {
+          name: 'Composite Buildup',
+          price: '₦85,000',
+          duration: '1 hr',
+          description: 'Tooth restoration',
+          image: 'https://images.unsplash.com/photo-1606811971618-4486d14f3f99?w=400&q=80'
+        },
+        {
+          name: 'Fluoride Treatment',
+          price: '₦50,000',
+          duration: '1 hr',
+          description: 'Strengthen tooth enamel',
+          image: 'https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=400&q=80'
+        },
+        {
+          name: 'Fissure Sealant',
+          price: '₦40,000',
+          duration: '1 hr',
+          description: 'Protective coating',
+          image: 'https://images.unsplash.com/photo-1606811971618-4486d14f3f99?w=400&q=80'
+        },
+        {
+          name: 'Tooth Gem',
+          price: '₦20,000',
+          duration: '20 mins',
+          description: 'Decorative dental jewelry',
+          image: 'https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=400&q=80'
+        },
+        {
+          name: 'Subgingival Curettage',
+          price: '₦20,000',
+          duration: '1 hr',
+          description: 'Deep gum cleaning',
+          image: 'https://images.unsplash.com/photo-1606811971618-4486d14f3f99?w=400&q=80'
+        },
+        {
+          name: 'Routine Tooth Extraction',
+          price: '₦80,000',
+          duration: '1 hr',
+          description: 'Safe tooth removal',
+          image: 'https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=400&q=80'
+        },
+        {
+          name: 'Surgical Extraction (Third Molar)',
+          price: '₦200,000',
+          duration: '1 hr',
+          description: 'Wisdom tooth removal',
+          image: 'https://images.unsplash.com/photo-1606811971618-4486d14f3f99?w=400&q=80'
+        },
+        {
+          name: 'Root Canal Treatment',
+          price: '₦200,000',
+          duration: '1 hr',
+          description: 'Save infected tooth',
+          image: 'https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=400&q=80'
+        },
+        {
+          name: 'Post and Core Treatment',
+          price: '₦100,000',
+          duration: '1 hr',
+          description: 'Tooth structure restoration',
+          image: 'https://images.unsplash.com/photo-1606811971618-4486d14f3f99?w=400&q=80'
+        },
+        {
+          name: 'Ceramic Corrective Braces',
+          price: '₦2,200,000',
+          duration: '1 hr',
+          description: 'Clear orthodontic treatment',
+          image: 'https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=400&q=80'
+        },
+        {
+          name: 'Metal Corrective Braces',
+          price: '₦1,900,000',
+          duration: '1 hr',
+          description: 'Traditional orthodontics',
+          image: 'https://images.unsplash.com/photo-1606811971618-4486d14f3f99?w=400&q=80'
+        },
+        {
+          name: 'Dental Implant (per tooth)',
+          price: '₦2,500,000',
+          duration: '1 hr',
+          description: 'Permanent tooth replacement',
+          image: 'https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=400&q=80'
+        },
+        {
+          name: 'Operculectomy',
+          price: '₦50,000',
+          duration: '1 hr',
+          description: 'Gum tissue removal',
+          image: 'https://images.unsplash.com/photo-1606811971618-4486d14f3f99?w=400&q=80'
+        },
+        {
+          name: 'Gingivectomy',
+          price: '₦90,000',
+          duration: '1 hr',
+          description: 'Gum reshaping',
+          image: 'https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=400&q=80'
+        },
+        {
+          name: 'Dental Bridge (Zirconia per tooth)',
+          price: '₦800,000',
+          duration: '1 hr',
+          description: 'Premium bridge restoration',
+          image: 'https://images.unsplash.com/photo-1606811971618-4486d14f3f99?w=400&q=80'
+        },
+        {
+          name: 'Dental Bridge (PFM per tooth)',
+          price: '₦250,000',
+          duration: '1 hr',
+          description: 'Porcelain-fused-to-metal bridge',
+          image: 'https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=400&q=80'
+        },
+        {
+          name: 'Dental Crown (PFM)',
+          price: '₦250,000',
+          duration: '1 hr',
+          description: 'Standard crown restoration',
+          image: 'https://images.unsplash.com/photo-1606811971618-4486d14f3f99?w=400&q=80'
+        },
+        {
+          name: 'Zirconia Dental Crown',
+          price: '₦800,000',
+          duration: '1 hr',
+          description: 'Premium crown restoration',
+          image: 'https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=400&q=80'
+        },
+        {
+          name: 'Porcelain Veneer (per tooth)',
+          price: '₦650,000',
+          duration: '1 hr',
+          description: 'Premium veneers',
+          image: 'https://images.unsplash.com/photo-1606811971618-4486d14f3f99?w=400&q=80'
+        },
+        {
+          name: 'Composite Veneer (per tooth)',
+          price: '₦300,000',
+          duration: '1 hr',
+          description: 'Affordable veneers',
+          image: 'https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=400&q=80'
+        },
+        {
+          name: 'Flexible Denture (per tooth)',
+          price: '₦100,000',
+          duration: '1 hr',
+          description: 'Comfortable partial denture',
+          image: 'https://images.unsplash.com/photo-1606811971618-4486d14f3f99?w=400&q=80'
+        },
+        {
+          name: 'Acrylic Denture (per tooth)',
+          price: '₦55,000',
+          duration: '1 hr',
+          description: 'Standard denture option',
+          image: 'https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=400&q=80'
+        },
+        {
+          name: 'IMF (Ivy Loop Wiring)',
+          price: '₦85,000',
+          duration: '1 hr',
+          description: 'Jaw immobilization',
+          image: 'https://images.unsplash.com/photo-1606811971618-4486d14f3f99?w=400&q=80'
+        },
+        {
+          name: 'Dental Crown Cementation',
+          price: '₦40,000',
+          duration: '1 hr',
+          description: 'Secure crown placement',
+          image: 'https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=400&q=80'
+        },
+        {
+          name: 'Fashion Braces',
+          price: '₦200,000',
+          duration: '1 hr',
+          description: 'Decorative braces',
+          image: 'https://images.unsplash.com/photo-1606811971618-4486d14f3f99?w=400&q=80'
+        }
+      ]
+    },
+    {
+      category: 'Manicure and Pedicure',
+      services: [
+        {
+          name: 'Big Toe Wrap (both)',
+          price: '₦10,000',
+          duration: '1 hr',
+          description: 'Decorative toe wraps',
+          image: 'https://images.unsplash.com/photo-1604654894610-df63bc536371?w=400&q=80'
+        },
+        {
+          name: 'Paraffin Wax (hand and feet)',
+          price: '₦35,000',
+          duration: '1 hr',
+          description: 'Moisturizing wax treatment',
+          image: 'https://images.unsplash.com/photo-1610992015732-2449b76344bc?w=400&q=80'
+        },
+        {
+          name: 'Classic Pedicure',
+          price: '₦30,000',
+          duration: '1 hr',
+          description: 'Traditional pedicure service',
+          image: 'https://images.unsplash.com/photo-1604654894610-df63bc536371?w=400&q=80'
+        },
+        {
+          name: 'Classic Manicure',
+          price: '₦15,000',
+          duration: '1 hr',
+          description: 'Traditional manicure service',
+          image: 'https://images.unsplash.com/photo-1610992015732-2449b76344bc?w=400&q=80'
+        },
+        {
+          name: 'Spa Pedicure with Regular Polish',
+          price: '₦25,000',
+          duration: '1 hr',
+          description: 'Luxurious pedicure experience',
+          image: 'https://images.unsplash.com/photo-1604654894610-df63bc536371?w=400&q=80'
+        },
+        {
+          name: 'Spa Pedicure with Gel Polish',
+          price: '₦30,000',
+          duration: '1 hr',
+          description: 'Spa pedicure with long-lasting gel',
+          image: 'https://images.unsplash.com/photo-1610992015732-2449b76344bc?w=400&q=80'
+        },
+        {
+          name: 'Spa Manicure and Pedicure',
+          price: '₦40,000',
+          duration: '1 hr',
+          description: 'Complete spa hand and foot care',
+          image: 'https://images.unsplash.com/photo-1604654894610-df63bc536371?w=400&q=80'
+        }
+      ]
+    },
+    {
+      category: 'Nail Procedures',
+      services: [
+        {
+          name: 'Gel Soak Off',
+          price: '₦2,000',
+          duration: '1 hr',
+          description: 'Safe gel polish removal',
+          image: 'https://images.unsplash.com/photo-1610992015732-2449b76344bc?w=400&q=80'
+        },
+        {
+          name: 'Acrylic Full Set',
+          price: '₦40,000',
+          duration: '1 hr',
+          description: 'Complete acrylic nail application',
+          image: 'https://images.unsplash.com/photo-1604654894610-df63bc536371?w=400&q=80'
+        },
+        {
+          name: 'Stick-on with Regular Polish',
+          price: '₦15,000',
+          duration: '1 hr',
+          description: 'Press-on nails with polish',
+          image: 'https://images.unsplash.com/photo-1610992015732-2449b76344bc?w=400&q=80'
+        },
+        {
+          name: 'Stick-on with Gel Polish',
+          price: '₦20,000',
+          duration: '1 hr',
+          description: 'Press-on nails with gel polish',
+          image: 'https://images.unsplash.com/photo-1604654894610-df63bc536371?w=400&q=80'
+        },
+        {
+          name: '3D Chrome Design',
+          price: '₦5,000',
+          duration: '1 hr',
+          description: 'Metallic chrome nail art',
+          image: 'https://images.unsplash.com/photo-1610992015732-2449b76344bc?w=400&q=80'
+        },
+        {
+          name: 'Stone and Pearl',
+          price: '₦3,000',
+          duration: '1 hr',
+          description: 'Elegant nail embellishments',
+          image: 'https://images.unsplash.com/photo-1604654894610-df63bc536371?w=400&q=80'
+        },
+        {
+          name: 'Pigment Design',
+          price: '₦5,000',
+          duration: '1 hr',
+          description: 'Vibrant pigment nail art',
+          image: 'https://images.unsplash.com/photo-1610992015732-2449b76344bc?w=400&q=80'
+        },
+        {
+          name: 'Marble Design',
+          price: '₦5,000',
+          duration: '1 hr',
+          description: 'Elegant marble effect',
+          image: 'https://images.unsplash.com/photo-1604654894610-df63bc536371?w=400&q=80'
+        },
+        {
+          name: 'Acrylic Toes Nails',
+          price: '₦20,000',
+          duration: '1 hr',
+          description: 'Acrylic toenail enhancement',
+          image: 'https://images.unsplash.com/photo-1610992015732-2449b76344bc?w=400&q=80'
+        },
+        {
+          name: 'Fiber Glass Nails',
+          price: '₦22,000',
+          duration: '1 hr',
+          description: 'Strong, natural-looking nails',
+          image: 'https://images.unsplash.com/photo-1604654894610-df63bc536371?w=400&q=80'
+        },
+        {
+          name: 'Nail Wrap',
+          price: '₦10,000',
+          duration: '1 hr',
+          description: 'Decorative nail wraps',
+          image: 'https://images.unsplash.com/photo-1610992015732-2449b76344bc?w=400&q=80'
+        },
+        {
+          name: 'Nail Infill',
+          price: '₦15,000',
+          duration: '1 hr',
+          description: 'Maintain your acrylic nails',
+          image: 'https://images.unsplash.com/photo-1604654894610-df63bc536371?w=400&q=80'
+        },
+        {
+          name: 'Ombre Nails',
+          price: '₦30,000',
+          duration: '1 hr',
+          description: 'Gradient color effect',
+          image: 'https://images.unsplash.com/photo-1610992015732-2449b76344bc?w=400&q=80'
+        },
+        {
+          name: 'Cat Eye Design',
+          price: '₦5,000',
+          duration: '1 hr',
+          description: 'Magnetic gel polish effect',
+          image: 'https://images.unsplash.com/photo-1604654894610-df63bc536371?w=400&q=80'
+        },
+        {
+          name: 'Glitters per Finger',
+          price: '₦5,000',
+          duration: '1 hr',
+          description: 'Sparkle and shine',
+          image: 'https://images.unsplash.com/photo-1610992015732-2449b76344bc?w=400&q=80'
         }
       ]
     }
@@ -136,8 +1039,8 @@ export default function Services() {
           <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-purple-primary/60"></div>
         </div>
         <div className="relative z-10 max-w-7xl mx-auto px-4 text-center">
-          <h1 className="text-5xl font-bold mb-4">Our Full Spectrum of Aesthetic & Wellness Services</h1>
-          <p className="text-xl">Personalized treatments designed for your unique beauty goals</p>
+          <h1 className="text-5xl font-bold mb-4">Complete Aesthetic & Wellness Services</h1>
+          <p className="text-xl">Comprehensive treatments for every aspect of your beauty journey</p>
         </div>
       </section>
 
@@ -161,22 +1064,13 @@ export default function Services() {
                       </div>
                       <div className="p-6">
                         <h3 className="text-xl font-bold mb-2">{service.name}</h3>
-                        <p className="text-gold-primary font-semibold mb-3">{service.price}</p>
+                        <p className="text-gold-primary font-semibold mb-1">{service.price}</p>
+                        {service.duration && (
+                          <p className="text-sm text-gray-500 mb-3">{service.duration}</p>
+                        )}
                         <p className="text-gray-600 mb-4">{service.description}</p>
                         
-                        {isExpanded && (
-                          <div className="mb-4 p-4 bg-gray-50 rounded-lg">
-                            <p className="text-gray-700">{service.details}</p>
-                          </div>
-                        )}
-                        
                         <div className="flex gap-2">
-                          <button
-                            onClick={() => setExpandedService(isExpanded ? null : serviceKey)}
-                            className="flex-1 bg-gray-100 text-gray-700 px-4 py-2 rounded-lg hover:bg-gray-200 transition text-sm font-semibold"
-                          >
-                            {isExpanded ? 'Show Less' : 'Learn More'}
-                          </button>
                           <button className="flex-1 bg-gold-gradient text-white px-4 py-2 rounded-lg hover:opacity-90 transition text-sm font-semibold">
                             Book Now
                           </button>
