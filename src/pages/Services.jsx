@@ -10,21 +10,24 @@ export default function Services() {
       services: [
         {
           name: 'Botox',
-          price: 'Starting from $12/unit',
+          price: 'Starting from ₦18,500/unit',
           description: 'Reduce fine lines and wrinkles with FDA-approved neurotoxin injections.',
-          details: 'Botox works by temporarily relaxing facial muscles that cause wrinkles. Results typically last 3-4 months. Treatment takes 10-15 minutes with no downtime.'
+          details: 'Botox works by temporarily relaxing facial muscles that cause wrinkles. Results typically last 3-4 months. Treatment takes 10-15 minutes with no downtime.',
+          image: 'https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=400&q=80'
         },
         {
           name: 'Dermal Fillers',
-          price: 'Starting from $650/syringe',
+          price: 'Starting from ₦1,000,000/syringe',
           description: 'Restore volume and contour with hyaluronic acid fillers.',
-          details: 'Our range of premium fillers can enhance lips, cheeks, and smooth deep lines. Results are immediate and can last 6-18 months depending on the product.'
+          details: 'Our range of premium fillers can enhance lips, cheeks, and smooth deep lines. Results are immediate and can last 6-18 months depending on the product.',
+          image: 'https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?w=400&q=80'
         },
         {
           name: 'Kybella',
-          price: 'Starting from $800/session',
+          price: 'Starting from ₦1,230,000/session',
           description: 'Non-surgical double chin reduction treatment.',
-          details: 'FDA-approved injectable that destroys fat cells under the chin. Most patients need 2-4 treatments spaced 4-6 weeks apart.'
+          details: 'FDA-approved injectable that destroys fat cells under the chin. Most patients need 2-4 treatments spaced 4-6 weeks apart.',
+          image: 'https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?w=400&q=80'
         }
       ]
     },
@@ -33,15 +36,17 @@ export default function Services() {
       services: [
         {
           name: 'Morpheus8',
-          price: 'Starting from $1,200/session',
+          price: 'Starting from ₦1,845,000/session',
           description: 'Revolutionary microneedling with radiofrequency for skin tightening.',
-          details: 'Combines microneedling with RF energy to remodel collagen and tighten skin. Treats face, neck, and body. 3-4 sessions recommended for optimal results.'
+          details: 'Combines microneedling with RF energy to remodel collagen and tighten skin. Treats face, neck, and body. 3-4 sessions recommended for optimal results.',
+          image: 'https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?w=400&q=80'
         },
         {
           name: 'Ultherapy',
-          price: 'Starting from $2,500/treatment',
+          price: 'Starting from ₦3,845,000/treatment',
           description: 'Ultrasound-based non-surgical facelift.',
-          details: 'Uses focused ultrasound to lift and tighten skin on the face, neck, and décolletage. Results develop over 2-3 months and can last up to 2 years.'
+          details: 'Uses focused ultrasound to lift and tighten skin on the face, neck, and décolletage. Results develop over 2-3 months and can last up to 2 years.',
+          image: 'https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=400&q=80'
         }
       ]
     },
@@ -50,21 +55,24 @@ export default function Services() {
       services: [
         {
           name: 'Laser Hair Removal',
-          price: 'Starting from $150/session',
+          price: 'Starting from ₦230,000/session',
           description: 'Permanent hair reduction using advanced Candela technology.',
-          details: 'Safe for all skin types. Most areas require 6-8 treatments spaced 4-6 weeks apart. Virtually painless with our cooling system.'
+          details: 'Safe for all skin types. Most areas require 6-8 treatments spaced 4-6 weeks apart. Virtually painless with our cooling system.',
+          image: 'https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=400&q=80'
         },
         {
           name: 'Laser Skin Resurfacing',
-          price: 'Starting from $800/session',
+          price: 'Starting from ₦1,230,000/session',
           description: 'Improve skin texture, tone, and reduce scarring.',
-          details: 'Fractional CO2 laser treatment for dramatic skin renewal. Addresses wrinkles, sun damage, acne scars, and uneven texture.'
+          details: 'Fractional CO2 laser treatment for dramatic skin renewal. Addresses wrinkles, sun damage, acne scars, and uneven texture.',
+          image: 'https://images.unsplash.com/photo-1515377905703-c4788e51af15?w=400&q=80'
         },
         {
           name: 'IPL Photofacial',
-          price: 'Starting from $400/session',
+          price: 'Starting from ₦615,000/session',
           description: 'Treat sun damage, redness, and pigmentation.',
-          details: 'Intense pulsed light therapy that targets brown spots, redness, and broken capillaries. No downtime. 3-5 sessions recommended.'
+          details: 'Intense pulsed light therapy that targets brown spots, redness, and broken capillaries. No downtime. 3-5 sessions recommended.',
+          image: 'https://images.unsplash.com/photo-1614252368970-c1b3d43e8ccd?w=400&q=80'
         }
       ]
     },
@@ -73,21 +81,24 @@ export default function Services() {
       services: [
         {
           name: 'HydraFacial',
-          price: '$250/session',
+          price: '₦385,000/session',
           description: 'Deep cleansing, exfoliation, and hydration treatment.',
-          details: 'Patented technology that cleanses, extracts, and hydrates skin. Immediate results with no downtime. Perfect before special events.'
+          details: 'Patented technology that cleanses, extracts, and hydrates skin. Immediate results with no downtime. Perfect before special events.',
+          image: 'https://images.unsplash.com/photo-1560750588-73207b1ef5b8?w=400&q=80'
         },
         {
           name: 'Medical Grade Peels',
-          price: 'Starting from $150/session',
+          price: 'Starting from ₦230,000/session',
           description: 'Customized chemical peels for various skin concerns.',
-          details: 'Range from light to deep peels addressing acne, pigmentation, and aging. Tailored to your specific skin type and goals.'
+          details: 'Range from light to deep peels addressing acne, pigmentation, and aging. Tailored to your specific skin type and goals.',
+          image: 'https://images.unsplash.com/photo-1522338242992-e1a54906a8da?w=400&q=80'
         },
         {
           name: 'Microneedling',
-          price: 'Starting from $350/session',
+          price: 'Starting from ₦538,000/session',
           description: 'Collagen induction therapy for smoother, firmer skin.',
-          details: 'Stimulates natural collagen production to improve texture, reduce scarring, and minimize pores. 3-6 sessions recommended.'
+          details: 'Stimulates natural collagen production to improve texture, reduce scarring, and minimize pores. 3-6 sessions recommended.',
+          image: 'https://images.unsplash.com/photo-1594312915251-48db9280c8f1?w=400&q=80'
         }
       ]
     },
@@ -96,15 +107,17 @@ export default function Services() {
       services: [
         {
           name: 'Teeth Whitening',
-          price: 'Starting from $500',
+          price: 'Starting from ₦770,000',
           description: 'Professional-grade whitening for a brighter smile.',
-          details: 'In-office treatment that can lighten teeth up to 8 shades in one session. Results last 1-2 years with proper care.'
+          details: 'In-office treatment that can lighten teeth up to 8 shades in one session. Results last 1-2 years with proper care.',
+          image: 'https://images.unsplash.com/photo-1606811971618-4486d14f3f99?w=400&q=80'
         },
         {
           name: 'Smile Makeover Consultation',
           price: 'Complimentary',
           description: 'Comprehensive assessment and treatment planning.',
-          details: 'Personalized consultation to discuss veneers, bonding, and other cosmetic dental options.'
+          details: 'Personalized consultation to discuss veneers, bonding, and other cosmetic dental options.',
+          image: 'https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=400&q=80'
         }
       ]
     }
@@ -113,8 +126,16 @@ export default function Services() {
   return (
     <div>
       {/* Hero Banner */}
-      <section className="bg-gold-gradient text-white py-20">
-        <div className="max-w-7xl mx-auto px-4 text-center">
+      <section className="relative py-20 text-white">
+        <div className="absolute inset-0">
+          <img 
+            src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=1920&q=80" 
+            alt="Services background"
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-purple-primary/60"></div>
+        </div>
+        <div className="relative z-10 max-w-7xl mx-auto px-4 text-center">
           <h1 className="text-5xl font-bold mb-4">Our Full Spectrum of Aesthetic & Wellness Services</h1>
           <p className="text-xl">Personalized treatments designed for your unique beauty goals</p>
         </div>
@@ -135,12 +156,10 @@ export default function Services() {
                   
                   return (
                     <div key={svcIdx} className="bg-white border border-gray-200 rounded-lg shadow-md hover:shadow-xl transition overflow-hidden">
+                      <div className="h-48 overflow-hidden">
+                        <img src={service.image} alt={service.name} className="w-full h-full object-cover" />
+                      </div>
                       <div className="p-6">
-                        <div className="w-12 h-12 bg-gold-gradient rounded-lg mb-4 flex items-center justify-center">
-                          <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
-                          </svg>
-                        </div>
                         <h3 className="text-xl font-bold mb-2">{service.name}</h3>
                         <p className="text-gold-primary font-semibold mb-3">{service.price}</p>
                         <p className="text-gray-600 mb-4">{service.description}</p>

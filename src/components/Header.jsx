@@ -9,7 +9,7 @@ export default function Header() {
 
   useEffect(() => {
     setIsLoading(true);
-    const timer = setTimeout(() => setIsLoading(false), 800);
+    const timer = setTimeout(() => setIsLoading(false), 2000);
     return () => clearTimeout(timer);
   }, [location]);
 
@@ -20,15 +20,18 @@ export default function Header() {
 
   return (
     <>
-      {/* Loading Bar */}
+      {/* Loading Animation */}
       {isLoading && (
-        <div className="fixed top-0 left-0 right-0 h-1 bg-gold-gradient z-[100] animate-pulse">
-          <div className="h-full bg-gold-primary animate-[shimmer_1s_ease-in-out_infinite]" 
-               style={{
-                 animation: 'shimmer 0.8s ease-in-out',
-                 background: 'linear-gradient(90deg, transparent 0%, #D4AF37 50%, transparent 100%)',
-                 backgroundSize: '200% 100%',
-               }}>
+        <div className="fixed inset-0 bg-black/50 z-[100] flex items-center justify-center">
+          <div className="text-center">
+            <h1 className="text-6xl font-bold bg-gold-gradient bg-clip-text text-transparent animate-pulse">
+              VCP
+            </h1>
+            <div className="mt-4 flex justify-center space-x-2">
+              <div className="w-3 h-3 bg-gold-primary rounded-full animate-bounce" style={{ animationDelay: '0s' }}></div>
+              <div className="w-3 h-3 bg-gold-primary rounded-full animate-bounce" style={{ animationDelay: '0.2s' }}></div>
+              <div className="w-3 h-3 bg-gold-primary rounded-full animate-bounce" style={{ animationDelay: '0.4s' }}></div>
+            </div>
           </div>
         </div>
       )}

@@ -87,8 +87,16 @@ export default function Portfolio() {
   return (
     <div>
       {/* Hero Banner */}
-      <section className="bg-gold-gradient text-white py-20">
-        <div className="max-w-7xl mx-auto px-4 text-center">
+      <section className="relative py-20 text-white">
+        <div className="absolute inset-0">
+          <img 
+            src="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?w=1920&q=80" 
+            alt="Portfolio background"
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-purple-primary/60"></div>
+        </div>
+        <div className="relative z-10 max-w-7xl mx-auto px-4 text-center">
           <h1 className="text-5xl font-bold mb-4">Our Results. Your Confidence.</h1>
           <p className="text-xl">Real transformations from real clients</p>
         </div>

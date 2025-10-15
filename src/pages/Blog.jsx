@@ -5,6 +5,7 @@ export default function Blog() {
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedCategory, setSelectedCategory] = useState('all');
   const [currentPage, setCurrentPage] = useState(1);
+  const [selectedPost, setSelectedPost] = useState(null);
 
   const categories = ['all', 'Skincare', 'Injectables', 'Laser Treatments', 'Wellness'];
 
@@ -16,7 +17,25 @@ export default function Blog() {
       author: 'Dr. Smith',
       date: 'March 15, 2024',
       excerpt: 'Discover how this revolutionary treatment can transform your skin with minimal downtime and maximum results. Learn about the science behind Morpheus8...',
-      thumbnail: 'https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?w=600&q=80'
+      thumbnail: 'https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?w=600&q=80',
+      fullContent: `Morpheus8 is a revolutionary fractional skin treatment that combines microneedling with radiofrequency energy to remodel and contour the face and body. This innovative procedure has become one of the most sought-after treatments in medical aesthetics.
+
+**How Morpheus8 Works:**
+The treatment uses tiny needles to deliver radiofrequency energy deep into the skin and fat, triggering the body's natural healing response. This stimulates collagen production and remodels tissue from within, resulting in smoother, firmer, and more youthful-looking skin.
+
+**Benefits:**
+- Reduces wrinkles and fine lines
+- Tightens loose skin
+- Improves skin texture and tone
+- Minimizes acne scars
+- Reduces stretch marks
+- Little to no downtime
+
+**What to Expect:**
+Treatment takes 30-60 minutes depending on the area. Mild redness and swelling may occur for 1-3 days. Results continue to improve over 3-6 months as new collagen forms.
+
+**Best Candidates:**
+Morpheus8 is ideal for anyone looking to improve skin laxity, reduce wrinkles, or address scarring without surgery. It's safe for all skin types and can be used on the face, neck, and body.`
     },
     {
       id: 2,
@@ -25,7 +44,27 @@ export default function Blog() {
       author: 'Dr. Smith',
       date: 'March 10, 2024',
       excerpt: 'Understanding the key differences between popular neurotoxin treatments to help you make an informed decision for your aesthetic goals...',
-      thumbnail: 'https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=600&q=80'
+      thumbnail: 'https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=600&q=80',
+      fullContent: `Both Botox and Dysport are FDA-approved neurotoxins that temporarily relax muscles to reduce wrinkles. While they work similarly, there are key differences to consider.
+
+**Key Differences:**
+- **Spread:** Dysport spreads more than Botox, making it ideal for larger areas
+- **Onset:** Dysport may show results 2-3 days faster than Botox
+- **Duration:** Both last 3-4 months on average
+- **Units:** Dysport requires more units but is priced lower per unit
+
+**Best For Botox:**
+- Precise, targeted areas
+- Crow's feet
+- Frown lines between brows
+
+**Best For Dysport:**
+- Larger treatment areas
+- Forehead lines
+- Those seeking faster results
+
+**The Verdict:**
+Both are excellent choices. Your provider will recommend the best option based on your specific needs and facial anatomy.`
     },
     {
       id: 3,
@@ -80,8 +119,16 @@ export default function Blog() {
   return (
     <div>
       {/* Hero Banner */}
-      <section className="bg-gold-gradient text-white py-20">
-        <div className="max-w-7xl mx-auto px-4 text-center">
+      <section className="relative py-20 text-white">
+        <div className="absolute inset-0">
+          <img 
+            src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=1920&q=80" 
+            alt="Blog background"
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-purple-primary/60"></div>
+        </div>
+        <div className="relative z-10 max-w-7xl mx-auto px-4 text-center">
           <h1 className="text-5xl font-bold mb-4">Aesthetic Insights & Wellness Advice</h1>
           <p className="text-xl">Expert guidance from our medical professionals</p>
         </div>
@@ -158,7 +205,10 @@ export default function Blog() {
                         <span>{post.date}</span>
                       </div>
                       <p className="text-gray-700 mb-4">{post.excerpt}</p>
-                      <button className="text-gold-primary font-semibold hover:underline">
+                      <button 
+                        onClick={() => setSelectedPost(post)}
+                        className="text-gold-primary font-semibold hover:underline"
+                      >
                         Read More →
                       </button>
                     </div>
@@ -204,6 +254,49 @@ export default function Blog() {
           )}
         </div>
       </section>
+
+      {/* Full Blog Post Modal */}
+      {selectedPost && (
+        <div 
+          className="fixed inset-0 bg-black bg-opacity-90 z-50 overflow-y-auto"
+          onClick={() => setSelectedPost(null)}
+        >
+          <div className="min-h-screen px-4 py-8 flex items-center justify-center">
+            <div 
+              className="relative max-w-4xl w-full bg-white rounded-lg shadow-xl"
+              onClick={e => e.stopPropagation()}
+            >
+              <button
+                onClick={() => setSelectedPost(null)}
+                className="absolute top-4 right-4 text-gray-500 hover:text-gray-700 z-10"
+              >
+                <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+              
+              <div className="h-64 overflow-hidden rounded-t-lg">
+                <img src={selectedPost.thumbnail} alt={selectedPost.title} className="w-full h-full object-cover" />
+              </div>
+              
+              <div className="p-8">
+                <span className="inline-block bg-gold-gradient text-white text-xs px-3 py-1 rounded-full mb-4">
+                  {selectedPost.category}
+                </span>
+                <h2 className="text-3xl font-bold mb-4">{selectedPost.title}</h2>
+                <div className="flex items-center text-sm text-gray-600 mb-6">
+                  <span>{selectedPost.author}</span>
+                  <span className="mx-2">•</span>
+                  <span>{selectedPost.date}</span>
+                </div>
+                <div className="prose max-w-none text-gray-700 whitespace-pre-line">
+                  {selectedPost.fullContent}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
 
       {/* Newsletter Signup */}
       <section className="bg-gray-50 py-16">
