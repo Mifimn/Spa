@@ -1,10 +1,19 @@
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 export default function Services() {
   const [expandedService, setExpandedService] = useState(null);
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedCategory, setSelectedCategory] = useState('all');
+  const [showScrollTop, setShowScrollTop] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setShowScrollTop(window.scrollY > 400);
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   const allCategories = ['all', 'VCP Spa Packages', 'Facial Procedures', 'Massage', 'Body Exfoliation & Sauna', 'Laser Non-Surgical Procedures', 'Injectables (Botox, Fillers, PRP)', 'IV Drips', 'Weight Loss', 'Morpheus Procedures', 'Dental Procedures', 'Manicure and Pedicure', 'Nail Procedures'];
 
@@ -17,42 +26,42 @@ export default function Services() {
           price: '₦465,500',
           duration: '6 hrs, 15 mins',
           description: '7 services designed for your special day (Save 5%)',
-          image: 'https://images.unsplash.com/photo-1519415387722-a1c3bbef716c?w=400&q=80'
+          image: '/images/The_Bridal_Glow_Package.jpeg'
         },
         {
           name: 'The Special Event Prep Package',
           price: '₦375,250',
           duration: '5 hrs, 15 mins',
           description: '6 services to prepare you for any special occasion (Save 5%)',
-          image: 'https://images.unsplash.com/photo-1560750588-73207b1ef5b8?w=400&q=80'
+          image: '/images/The_Special_Event_Prep_Package.jpeg'
         },
         {
           name: 'The Gentleman\'s Glow Package',
           price: '₦389,500',
           duration: '5 hrs, 50 mins',
           description: '7 services tailored for men (Save 5%)',
-          image: 'https://images.unsplash.com/photo-1621607512214-68297480165e?w=400&q=80'
+          image: '/images/The_Gentleman\'s_Glow_Package.jpeg'
         },
         {
           name: 'The Holiday Prep Package',
           price: '₦342,000',
           duration: '5 hrs, 5 mins',
           description: '6 services to get you holiday-ready (Save 5%)',
-          image: 'https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=400&q=80'
+          image: '/images/The_Holiday_Prep_Package.jpeg'
         },
         {
           name: 'The Self Love Package',
           price: '₦256,500',
           duration: '4 hrs, 15 mins',
           description: '5 services for ultimate self-care (Save 5%)',
-          image: 'https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=400&q=80'
+          image: '/images/The_Self_Love_Package.jpeg'
         },
         {
           name: 'The Serenity Glow Package',
           price: '₦209,000',
           duration: '3 hrs, 15 mins',
           description: '4 services for pure relaxation (Save 5%)',
-          image: 'https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=400&q=80'
+          image: '/images/The_Serenity_Glow_Package.jpeg'
         }
       ]
     },
@@ -64,7 +73,7 @@ export default function Services() {
           price: '₦85,000',
           duration: '1 hr',
           description: 'Our signature celebrity-grade facial treatment',
-          image: 'https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=400&q=80'
+          image: '/images/vcp_celebrity_facial.jpg'
         },
         {
           name: 'Hydra Glow Facial',
@@ -1168,6 +1177,19 @@ export default function Services() {
           </button>
         </div>
       </section>
+
+      {/* Scroll to Top Button */}
+      {showScrollTop && (
+        <button
+          onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+          className="fixed bottom-8 right-8 bg-gold-gradient text-white p-4 rounded-full shadow-lg hover:opacity-90 transition-all duration-300 z-50"
+          aria-label="Scroll to top"
+        >
+          <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 10l7-7m0 0l7 7m-7-7v18" />
+          </svg>
+        </button>
+      )}
     </div>
   );
 }
