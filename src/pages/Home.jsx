@@ -1,4 +1,3 @@
-
 import { Link } from 'react-router-dom';
 
 export default function Home() {
@@ -8,17 +7,17 @@ export default function Home() {
       <section className="relative h-screen bg-gradient-to-br from-gray-900 to-gray-800 flex items-center justify-center text-white overflow-hidden">
         <div className="absolute inset-0">
           <img 
-            src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=1920&q=80" 
-            alt="Luxury spa interior"
+            src="https://images.unsplash.com/photo-1606811971618-4486d14f3f99?w=1920&q=80" 
+            alt="Dental care"
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-purple-primary/50"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-sage-primary/50"></div>
         </div>
         <div className="relative z-10 text-center px-4">
-          <h1 className="text-5xl md:text-7xl font-bold mb-6">Doctor Led. Confidently You.</h1>
-          <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">VCP Laser & Aesthetics offers premier medical aesthetics and wellness in a safe, professional environment.</p>
-          <button className="bg-gold-gradient text-white px-8 py-4 rounded-lg text-lg font-semibold hover:opacity-90 transition">
-            Book a Consultation
+          <h1 className="text-5xl md:text-7xl font-bold mb-6">Enhance Your Natural Beauty</h1>
+          <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">Life Care Aesthetics offers premium dental and wellness services delivered to your home.</p>
+          <button className="bg-brand-gradient text-white px-8 py-4 rounded-lg text-lg font-semibold hover:opacity-90 transition">
+            Book Home Delivery
           </button>
         </div>
       </section>
@@ -28,61 +27,61 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
             <div className="flex flex-col items-center">
-              <div className="w-16 h-16 bg-gold-gradient rounded-full flex items-center justify-center mb-4">
+              <div className="w-16 h-16 bg-brand-gradient rounded-full flex items-center justify-center mb-4">
+                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+                </svg>
+              </div>
+              <h3 className="font-bold text-lg">Home Delivery</h3>
+              <p className="text-gray-600">Professional care at your doorstep</p>
+            </div>
+            <div className="flex flex-col items-center">
+              <div className="w-16 h-16 bg-brand-gradient rounded-full flex items-center justify-center mb-4">
                 <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
                 </svg>
               </div>
-              <h3 className="font-bold text-lg">Doctor Led</h3>
-              <p className="text-gray-600">Medical professionals you can trust</p>
+              <h3 className="font-bold text-lg">Expert Care</h3>
+              <p className="text-gray-600">Experienced professionals</p>
             </div>
             <div className="flex flex-col items-center">
-              <div className="w-16 h-16 bg-gold-gradient rounded-full flex items-center justify-center mb-4">
+              <div className="w-16 h-16 bg-brand-gradient rounded-full flex items-center justify-center mb-4">
                 <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
               </div>
-              <h3 className="font-bold text-lg">Certified Specialists</h3>
-              <p className="text-gray-600">Highly trained and experienced</p>
-            </div>
-            <div className="flex flex-col items-center">
-              <div className="w-16 h-16 bg-gold-gradient rounded-full flex items-center justify-center mb-4">
-                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
-                </svg>
-              </div>
-              <h3 className="font-bold text-lg">Candela Partner</h3>
-              <p className="text-gray-600">Premium equipment and technology</p>
+              <h3 className="font-bold text-lg">Flexible Scheduling</h3>
+              <p className="text-gray-600">Book at your convenience</p>
             </div>
           </div>
         </div>
       </section>
 
       {/* Featured Services */}
-      <section className="py-16 bg-gray-50">
+      <section className="py-16 bg-cream-light">
         <div className="max-w-7xl mx-auto px-4">
-          <h2 className="text-4xl font-bold text-center mb-12">Featured Services</h2>
+          <h2 className="text-4xl font-bold text-center mb-12 text-sage-primary">Our Services</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {[
               { 
-                name: 'Botox', 
-                desc: 'Smooth wrinkles and fine lines with precision injections',
-                img: 'https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=400&q=80'
-              },
-              { 
-                name: 'Morpheus8', 
-                desc: 'Revolutionary skin tightening and contouring',
-                img: 'https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=400&q=80'
-              },
-              { 
-                name: 'Dental Aesthetics', 
-                desc: 'Enhance your smile with professional care',
+                name: 'Teeth Whitening', 
+                desc: 'Professional whitening for a brighter smile',
                 img: 'https://images.unsplash.com/photo-1606811971618-4486d14f3f99?w=400&q=80'
               },
               { 
-                name: 'Advanced Facials', 
-                desc: 'Customized treatments for radiant skin',
-                img: 'https://images.unsplash.com/photo-1560750588-73207b1ef5b8?w=400&q=80'
+                name: 'Scaling & Polishing', 
+                desc: 'Deep cleaning for healthy teeth',
+                img: 'https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=400&q=80'
+              },
+              { 
+                name: 'IV Drips', 
+                desc: 'Wellness and beauty infusions',
+                img: 'https://images.unsplash.com/photo-1579154204601-01588f351e67?w=400&q=80'
+              },
+              { 
+                name: 'Tooth Gems', 
+                desc: 'Decorative dental jewelry',
+                img: 'https://images.unsplash.com/photo-1606811971618-4486d14f3f99?w=400&q=80'
               }
             ].map((service, idx) => (
               <div key={idx} className="bg-white rounded-lg shadow-md hover:shadow-xl transition overflow-hidden">
@@ -90,7 +89,7 @@ export default function Home() {
                 <div className="p-6">
                   <h3 className="text-xl font-bold mb-2">{service.name}</h3>
                   <p className="text-gray-600 mb-4">{service.desc}</p>
-                  <Link to="/services" className="text-purple-primary font-semibold hover:underline">Learn More →</Link>
+                  <Link to="/services" className="text-sage-primary font-semibold hover:underline">Learn More →</Link>
                 </div>
               </div>
             ))}
@@ -101,14 +100,14 @@ export default function Home() {
       {/* Testimonials */}
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4">
-          <h2 className="text-4xl font-bold text-center mb-12">What Our Clients Say</h2>
+          <h2 className="text-4xl font-bold text-center mb-12 text-sage-primary">What Our Clients Say</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
-              { name: 'Sarah M.', text: 'The best aesthetic clinic I\'ve ever visited. Professional, caring, and amazing results!' },
-              { name: 'Jennifer L.', text: 'Dr. Smith is incredible. I feel confident and beautiful after my treatments.' },
-              { name: 'Michael R.', text: 'Outstanding service from consultation to follow-up. Highly recommend!' }
+              { name: 'Sarah M.', text: 'Amazing home service! The teeth whitening was professional and convenient.' },
+              { name: 'Jennifer L.', text: 'Nurse Blessing was incredible. I feel confident and beautiful!' },
+              { name: 'Michael R.', text: 'Outstanding service from booking to follow-up. Highly recommend!' }
             ].map((testimonial, idx) => (
-              <div key={idx} className="bg-gray-50 p-6 rounded-lg">
+              <div key={idx} className="bg-cream-light p-6 rounded-lg">
                 <div className="flex mb-4">
                   {[...Array(5)].map((_, i) => (
                     <svg key={i} className="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
@@ -124,54 +123,36 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Meet the Doctor */}
-      <section className="py-16 bg-gray-50">
+      {/* Meet Nurse Blessing */}
+      <section className="py-16 bg-cream-light">
         <div className="max-w-7xl mx-auto px-4">
           <div className="flex flex-col md:flex-row items-center gap-12">
             <img 
-              src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=400&q=80" 
-              alt="Dr. Smith"
+              src="https://images.unsplash.com/photo-15598397734-2b71ea197ec2?w=400&q=80" 
+              alt="Nurse Blessing"
               className="w-64 h-64 rounded-lg object-cover shadow-lg"
             />
             <div>
-              <h2 className="text-4xl font-bold mb-4">Meet Dr. Smith</h2>
-              <p className="text-gray-700 text-lg mb-4">With over 15 years of experience in aesthetic medicine, Dr. Smith brings expertise and artistry to every treatment. Board-certified and passionate about helping clients achieve their aesthetic goals, Dr. Smith leads our team with a commitment to safety, natural results, and personalized care.</p>
-              <Link to="/contact" className="inline-block bg-gold-gradient text-white px-6 py-3 rounded-lg font-semibold hover:opacity-90 transition">
-                Our Team
+              <h2 className="text-4xl font-bold mb-4 text-sage-primary">Meet Nurse Blessing</h2>
+              <p className="text-gray-700 text-lg mb-4">With extensive experience in dental and aesthetic care, Nurse Blessing brings expertise and compassion to every home visit. Committed to enhancing your natural beauty with professional treatments delivered right to your doorstep.</p>
+              <Link to="/contact" className="inline-block bg-brand-gradient text-white px-6 py-3 rounded-lg font-semibold hover:opacity-90 transition">
+                Book an Appointment
               </Link>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Latest Blog Post */}
-      <section className="py-16 bg-white">
-        <div className="max-w-7xl mx-auto px-4">
-          <h2 className="text-4xl font-bold text-center mb-12">Latest From Our Blog</h2>
-          <div className="max-w-4xl mx-auto bg-gray-50 rounded-lg overflow-hidden shadow-md hover:shadow-xl transition">
-            <div className="md:flex">
-              <img 
-                src="https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?w=600&q=80" 
-                alt="Morpheus8 treatment"
-                className="md:w-1/3 w-full h-64 md:h-auto object-cover"
-              />
-              <div className="p-8 md:w-2/3">
-                <h3 className="text-2xl font-bold mb-3">The Ultimate Guide to Morpheus8 Treatment</h3>
-                <p className="text-gray-600 mb-4">Discover how this revolutionary treatment can transform your skin with minimal downtime and maximum results...</p>
-                <Link to="/blog" className="text-purple-primary font-semibold hover:underline">Read More →</Link>
-              </div>
-            </div>
-          </div>
+      {/* CTA Section */}
+      <section className="py-16 bg-sage-primary text-white">
+        <div className="max-w-7xl mx-auto px-4 text-center">
+          <h2 className="text-4xl font-bold mb-4">Ready to Enhance Your Natural Beauty?</h2>
+          <p className="text-xl mb-8">Book your home delivery service today!</p>
+          <button className="bg-white text-sage-primary px-8 py-4 rounded-lg text-lg font-semibold hover:bg-cream-light transition">
+            Book Now
+          </button>
         </div>
       </section>
-
-      {/* Footer */}
-      <footer className="bg-gray-800 text-white py-8">
-        <div className="max-w-7xl mx-auto px-4 text-center">
-          <p>&copy; 2023 VCP Laser & Aesthetics. All rights reserved.</p>
-          <p>Designed by mifimn</p>
-        </div>
-      </footer>
     </div>
   );
 }

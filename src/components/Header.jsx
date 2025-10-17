@@ -24,13 +24,13 @@ export default function Header() {
       {isLoading && (
         <div className="fixed inset-0 bg-black/50 z-[100] flex items-center justify-center">
           <div className="text-center">
-            <h1 className="text-6xl font-bold bg-gold-gradient bg-clip-text text-transparent animate-pulse">
-              VCP
+            <h1 className="text-6xl font-bold bg-brand-gradient bg-clip-text text-transparent animate-pulse">
+              LCA
             </h1>
             <div className="mt-4 flex justify-center space-x-2">
-              <div className="w-3 h-3 bg-gold-primary rounded-full animate-bounce" style={{ animationDelay: '0s' }}></div>
-              <div className="w-3 h-3 bg-gold-primary rounded-full animate-bounce" style={{ animationDelay: '0.2s' }}></div>
-              <div className="w-3 h-3 bg-gold-primary rounded-full animate-bounce" style={{ animationDelay: '0.4s' }}></div>
+              <div className="w-3 h-3 bg-sage-primary rounded-full animate-bounce" style={{ animationDelay: '0s' }}></div>
+              <div className="w-3 h-3 bg-sage-primary rounded-full animate-bounce" style={{ animationDelay: '0.2s' }}></div>
+              <div className="w-3 h-3 bg-sage-primary rounded-full animate-bounce" style={{ animationDelay: '0.4s' }}></div>
             </div>
           </div>
         </div>
@@ -40,28 +40,31 @@ export default function Header() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-20">
             <Link to="/" onClick={handleLinkClick} className="flex items-center">
-              <h1 className="text-2xl font-bold bg-gold-gradient bg-clip-text text-transparent">
-                VCP Laser & Aesthetics
-              </h1>
+              <div>
+                <h1 className="text-2xl font-bold bg-brand-gradient bg-clip-text text-transparent">
+                  Life Care Aesthetics
+                </h1>
+                <p className="text-xs text-sage-primary italic">Enhance Your Natural Beauty</p>
+              </div>
             </Link>
 
             {/* Desktop Navigation */}
             <nav className="hidden md:flex space-x-8">
-              <Link to="/" onClick={handleLinkClick} className="text-gray-700 hover:text-gold-primary transition">Home</Link>
-              <Link to="/services" onClick={handleLinkClick} className="text-gray-700 hover:text-gold-primary transition">Services</Link>
-              <Link to="/portfolio" onClick={handleLinkClick} className="text-gray-700 hover:text-gold-primary transition">Portfolio</Link>
-              <Link to="/blog" onClick={handleLinkClick} className="text-gray-700 hover:text-gold-primary transition">Blog</Link>
-              <Link to="/contact" onClick={handleLinkClick} className="text-gray-700 hover:text-gold-primary transition">Contact</Link>
+              <Link to="/" onClick={handleLinkClick} className="text-gray-700 hover:text-sage-primary transition">Home</Link>
+              <Link to="/services" onClick={handleLinkClick} className="text-gray-700 hover:text-sage-primary transition">Services</Link>
+              <Link to="/portfolio" onClick={handleLinkClick} className="text-gray-700 hover:text-sage-primary transition">Portfolio</Link>
+              <Link to="/blog" onClick={handleLinkClick} className="text-gray-700 hover:text-sage-primary transition">Blog</Link>
+              <Link to="/contact" onClick={handleLinkClick} className="text-gray-700 hover:text-sage-primary transition">Contact</Link>
             </nav>
 
-            <button className="hidden md:block bg-gold-gradient text-white px-6 py-3 rounded-lg font-semibold hover:opacity-90 transition">
+            <button className="hidden md:block bg-brand-gradient text-white px-6 py-3 rounded-lg font-semibold hover:opacity-90 transition">
               Book Appointment
             </button>
 
             {/* Mobile Menu Button */}
             <button 
               onClick={() => setIsOpen(!isOpen)}
-              className="md:hidden p-2 text-gold-primary"
+              className="md:hidden p-2 text-sage-primary"
             >
               <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 {isOpen ? (
@@ -76,12 +79,12 @@ export default function Header() {
           {/* Mobile Navigation */}
           {isOpen && (
             <nav className="md:hidden pb-4 space-y-2 animate-fadeIn">
-              <Link to="/" onClick={handleLinkClick} className="block py-2 text-gray-700 hover:text-gold-primary">Home</Link>
-              <Link to="/services" onClick={handleLinkClick} className="block py-2 text-gray-700 hover:text-gold-primary">Services</Link>
-              <Link to="/portfolio" onClick={handleLinkClick} className="block py-2 text-gray-700 hover:text-gold-primary">Portfolio</Link>
-              <Link to="/blog" onClick={handleLinkClick} className="block py-2 text-gray-700 hover:text-gold-primary">Blog</Link>
-              <Link to="/contact" onClick={handleLinkClick} className="block py-2 text-gray-700 hover:text-gold-primary">Contact</Link>
-              <button className="w-full bg-gold-gradient text-white px-6 py-3 rounded-lg font-semibold mt-2">
+              <Link to="/" onClick={handleLinkClick} className="block py-2 text-gray-700 hover:text-sage-primary">Home</Link>
+              <Link to="/services" onClick={handleLinkClick} className="block py-2 text-gray-700 hover:text-sage-primary">Services</Link>
+              <Link to="/portfolio" onClick={handleLinkClick} className="block py-2 text-gray-700 hover:text-sage-primary">Portfolio</Link>
+              <Link to="/blog" onClick={handleLinkClick} className="block py-2 text-gray-700 hover:text-sage-primary">Blog</Link>
+              <Link to="/contact" onClick={handleLinkClick} className="block py-2 text-gray-700 hover:text-sage-primary">Contact</Link>
+              <button className="w-full bg-brand-gradient text-white px-6 py-3 rounded-lg font-semibold mt-2">
                 Book Appointment
               </button>
             </nav>
@@ -90,10 +93,6 @@ export default function Header() {
       </header>
 
       <style>{`
-        @keyframes shimmer {
-          0% { background-position: -200% 0; }
-          100% { background-position: 200% 0; }
-        }
         @keyframes fadeIn {
           from { opacity: 0; transform: translateY(-10px); }
           to { opacity: 1; transform: translateY(0); }

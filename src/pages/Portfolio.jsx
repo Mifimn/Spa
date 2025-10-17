@@ -18,109 +18,76 @@ export default function Portfolio() {
   const beforeAfterPhotos = [
     { 
       id: 1, 
-      service: 'Botox', 
-      title: 'Forehead Lines Reduction', 
-      before: 'https://images.unsplash.com/photo-1560750588-73207b1ef5b8?w=600&q=80', 
-      after: 'https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?w=600&q=80' 
+      service: 'Teeth Whitening', 
+      title: 'Professional Teeth Whitening Results', 
+      before: 'https://images.unsplash.com/photo-1606811971618-4486d14f3f99?w=600&q=80', 
+      after: 'https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=600&q=80' 
     },
     { 
       id: 2, 
-      service: 'Morpheus8', 
-      title: 'Full Face Skin Tightening', 
-      before: 'https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?w=600&q=80', 
-      after: 'https://images.unsplash.com/photo-1515377905703-c4788e51af15?w=600&q=80' 
+      service: 'Scaling And Polishing', 
+      title: 'Deep Cleaning Transformation', 
+      before: 'https://images.unsplash.com/photo-1606811971618-4486d14f3f99?w=600&q=80', 
+      after: 'https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=600&q=80' 
     },
     { 
       id: 3, 
-      service: 'Fillers', 
-      title: 'Lip Enhancement', 
-      before: 'https://images.unsplash.com/photo-1614252368970-c1b3d43e8ccd?w=600&q=80', 
-      after: 'https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?w=600&q=80' 
+      service: 'Tooth Gems', 
+      title: 'Decorative Tooth Gem Application', 
+      before: 'https://images.unsplash.com/photo-1606811971618-4486d14f3f99?w=600&q=80', 
+      after: 'https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=600&q=80' 
     },
     { 
       id: 4, 
-      service: 'Laser', 
-      title: 'Full Face Laser Treatment', 
-      before: 'https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=600&q=80', 
+      service: 'Radiance IV', 
+      title: 'Skin Brightening Results', 
+      before: 'https://images.unsplash.com/photo-1560750588-73207b1ef5b8?w=600&q=80', 
       after: 'https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=600&q=80' 
     },
     { 
       id: 5, 
-      service: 'Dental', 
-      title: 'Teeth Whitening Results', 
+      service: 'Gum Treatment', 
+      title: 'Healthy Gums Restoration', 
       before: 'https://images.unsplash.com/photo-1606811971618-4486d14f3f99?w=600&q=80', 
       after: 'https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=600&q=80' 
     },
     { 
       id: 6, 
-      service: 'Morpheus8', 
-      title: 'Jawline Contouring', 
-      before: 'https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=600&q=80', 
-      after: 'https://images.unsplash.com/photo-1509967419530-da38b4704bc6?w=600&q=80' 
-    },
-    { 
-      id: 7, 
-      service: 'Facial', 
-      title: 'VCP Celebrity Facial', 
-      before: 'https://images.unsplash.com/photo-1522338242992-e1a54906a8da?w=600&q=80', 
-      after: 'https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=600&q=80' 
-    },
-    { 
-      id: 8, 
-      service: 'PRP', 
-      title: 'Vampire Facial Results', 
-      before: 'https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?w=600&q=80', 
-      after: 'https://images.unsplash.com/photo-1560750588-73207b1ef5b8?w=600&q=80' 
-    },
-    { 
-      id: 9, 
-      service: 'Laser', 
-      title: 'Laser Cellulite Treatment', 
-      before: 'https://images.unsplash.com/photo-1515377905703-c4788e51af15?w=600&q=80', 
-      after: 'https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=600&q=80' 
+      service: 'Fashion Braces', 
+      title: 'Stylish Braces Installation', 
+      before: 'https://images.unsplash.com/photo-1606811971618-4486d14f3f99?w=600&q=80', 
+      after: 'https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=600&q=80' 
     },
   ];
 
   const treatmentVideos = [
     { 
       id: 1, 
-      title: 'Morpheus8 Full Face Treatment', 
-      thumbnail: 'https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?w=600&q=80', 
-      videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ' 
-    },
-    { 
-      id: 2, 
-      title: 'Botox Injection Technique', 
-      thumbnail: 'https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=600&q=80', 
-      videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ' 
-    },
-    { 
-      id: 3, 
-      title: 'VCP Celebrity Facial Experience', 
-      thumbnail: 'https://images.unsplash.com/photo-1560750588-73207b1ef5b8?w=600&q=80', 
-      videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ' 
-    },
-    { 
-      id: 4, 
-      title: 'Full Body Laser Treatment', 
-      thumbnail: 'https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=600&q=80', 
-      videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ' 
-    },
-    { 
-      id: 5, 
-      title: 'Dental Whitening Procedure', 
+      title: 'Teeth Whitening Procedure', 
       thumbnail: 'https://images.unsplash.com/photo-1606811971618-4486d14f3f99?w=600&q=80', 
       videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ' 
     },
     { 
-      id: 6, 
-      title: 'PRP Vampire Facial', 
-      thumbnail: 'https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=600&q=80', 
+      id: 2, 
+      title: 'Scaling and Polishing Process', 
+      thumbnail: 'https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=600&q=80', 
+      videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ' 
+    },
+    { 
+      id: 3, 
+      title: 'IV Drip Treatment at Home', 
+      thumbnail: 'https://images.unsplash.com/photo-1579154204601-01588f351e67?w=600&q=80', 
+      videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ' 
+    },
+    { 
+      id: 4, 
+      title: 'Tooth Gem Application', 
+      thumbnail: 'https://images.unsplash.com/photo-1606811971618-4486d14f3f99?w=600&q=80', 
       videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ' 
     },
   ];
 
-  const serviceTypes = ['all', 'Botox', 'Morpheus8', 'Fillers', 'Laser', 'Dental', 'Facial', 'PRP'];
+  const serviceTypes = ['all', 'Teeth Whitening', 'Scaling And Polishing', 'Tooth Gems', 'Gum Treatment', 'Fashion Braces', 'Radiance IV'];
 
   const filteredPhotos = selectedFilter === 'all' 
     ? beforeAfterPhotos 
@@ -136,7 +103,7 @@ export default function Portfolio() {
             alt="Portfolio background"
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-purple-primary/60"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-sage-primary/60"></div>
         </div>
         <div className="relative z-10 max-w-7xl mx-auto px-4 text-center">
           <h1 className="text-5xl font-bold mb-4">Our Results. Your Confidence.</h1>
@@ -152,7 +119,7 @@ export default function Portfolio() {
               onClick={() => setActiveTab('photos')}
               className={`px-8 py-3 rounded-lg font-semibold transition ${
                 activeTab === 'photos'
-                  ? 'bg-gold-gradient text-white'
+                  ? 'bg-brand-gradient text-white'
                   : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
               }`}
             >
@@ -162,7 +129,7 @@ export default function Portfolio() {
               onClick={() => setActiveTab('videos')}
               className={`px-8 py-3 rounded-lg font-semibold transition ${
                 activeTab === 'videos'
-                  ? 'bg-gold-gradient text-white'
+                  ? 'bg-brand-gradient text-white'
                   : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
               }`}
             >
@@ -174,7 +141,7 @@ export default function Portfolio() {
 
       {/* Photo Gallery */}
       {activeTab === 'photos' && (
-        <section className="py-16">
+        <section className="py-16 bg-cream-light">
           <div className="max-w-7xl mx-auto px-4">
             {/* Filter */}
             <div className="flex flex-wrap justify-center gap-3 mb-12">
@@ -184,7 +151,7 @@ export default function Portfolio() {
                   onClick={() => setSelectedFilter(type)}
                   className={`px-6 py-2 rounded-full font-semibold transition ${
                     selectedFilter === type
-                      ? 'bg-gold-gradient text-white'
+                      ? 'bg-brand-gradient text-white'
                       : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
                   }`}
                 >
@@ -212,7 +179,7 @@ export default function Portfolio() {
                     </div>
                   </div>
                   <div className="p-4">
-                    <span className="inline-block bg-gold-gradient text-white text-xs px-3 py-1 rounded-full mb-2">
+                    <span className="inline-block bg-brand-gradient text-white text-xs px-3 py-1 rounded-full mb-2">
                       {photo.service}
                     </span>
                     <h3 className="font-bold text-lg">{photo.title}</h3>
@@ -226,7 +193,7 @@ export default function Portfolio() {
 
       {/* Video Gallery */}
       {activeTab === 'videos' && (
-        <section className="py-16">
+        <section className="py-16 bg-cream-light">
           <div className="max-w-7xl mx-auto px-4">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {treatmentVideos.map(video => (
@@ -238,7 +205,7 @@ export default function Portfolio() {
                   <div className="relative h-64">
                     <img src={video.thumbnail} alt={video.title} className="w-full h-full object-cover" />
                     <div className="absolute inset-0 flex items-center justify-center bg-black/30 hover:bg-black/40 transition">
-                      <div className="w-16 h-16 bg-gold-gradient rounded-full flex items-center justify-center">
+                      <div className="w-16 h-16 bg-brand-gradient rounded-full flex items-center justify-center">
                         <svg className="w-8 h-8 text-white ml-1" fill="currentColor" viewBox="0 0 20 20">
                           <path d="M6.3 2.841A1.5 1.5 0 004 4.11V15.89a1.5 1.5 0 002.3 1.269l9.344-5.89a1.5 1.5 0 000-2.538L6.3 2.84z" />
                         </svg>
@@ -285,7 +252,7 @@ export default function Portfolio() {
                 </div>
                 <div className="p-6">
                   <h3 className="text-2xl font-bold mb-2">{selectedMedia.data.title}</h3>
-                  <span className="inline-block bg-gold-gradient text-white px-3 py-1 rounded-full text-sm">
+                  <span className="inline-block bg-brand-gradient text-white px-3 py-1 rounded-full text-sm">
                     {selectedMedia.data.service}
                   </span>
                 </div>
@@ -314,10 +281,10 @@ export default function Portfolio() {
       )}
 
       {/* Disclaimer */}
-      <section className="bg-gray-50 py-8">
+      <section className="bg-white py-8">
         <div className="max-w-7xl mx-auto px-4">
           <p className="text-xs text-gray-600 text-center">
-            <strong>Disclaimer:</strong> Individual results may vary. Photos and videos are of actual patients who have consented to share their images. Results depicted are not guaranteed and will depend on individual circumstances. Consult with our medical professionals to determine the best treatment plan for your specific needs.
+            <strong>Disclaimer:</strong> Individual results may vary. Photos and videos are of actual patients who have consented to share their images. Results depicted are not guaranteed and will depend on individual circumstances.
           </p>
         </div>
       </section>
@@ -326,7 +293,7 @@ export default function Portfolio() {
       {showScrollTop && (
         <button
           onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-          className="fixed bottom-8 right-8 bg-gold-gradient text-white p-4 rounded-full shadow-lg hover:opacity-90 transition-all duration-300 z-50"
+          className="fixed bottom-8 right-8 bg-brand-gradient text-white p-4 rounded-full shadow-lg hover:opacity-90 transition-all duration-300 z-50"
           aria-label="Scroll to top"
         >
           <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
