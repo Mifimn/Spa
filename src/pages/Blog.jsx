@@ -1,5 +1,5 @@
 import { useState } from 'react';
-// Import the animation component from the library
+import { Helmet } from 'react-helmet-async'; // <-- 1. Import Helmet for SEO
 import { Fade } from 'react-awesome-reveal';
 
 export default function Blog() {
@@ -10,7 +10,6 @@ export default function Blog() {
 
   const categories = ['all', 'Dental Services', 'Wellness'];
 
-  // --- UPDATED: Full articles have been added for all blog posts ---
   const blogPosts = [
     {
       id: 1,
@@ -179,12 +178,21 @@ Maintaining your gem is easy. Simply continue your regular oral hygiene routine,
 
   return (
     <div>
+      {/* 2. Add the Helmet block for this page's SEO */}
+      <Helmet>
+        <title>Health & Beauty Insights Blog | Life Care Aesthetics</title>
+        <meta
+          name="description"
+          content="Read the latest articles from Nurse Blessing on at-home dental care, wellness IV drips, and aesthetic tips for clients in Lagos."
+        />
+      </Helmet>
+
       {/* Hero Banner */}
       <section className="relative py-20 text-white">
         <div className="absolute inset-0">
           <img
             src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=1920&q=80"
-            alt="Blog background"
+            alt="A person reading health articles on a tablet" // <-- SEO Update
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-sage-primary/60"></div>
@@ -255,7 +263,8 @@ Maintaining your gem is easy. Simply continue your regular oral hygiene routine,
                   <Fade key={post.id} direction="up" delay={index * 100} triggerOnce>
                     <article className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition flex flex-col h-full">
                       <div className="h-48 overflow-hidden">
-                        <img src={post.thumbnail} alt={post.title} className="w-full h-full object-cover" />
+                        {/* SEO Update: Descriptive alt text */}
+                        <img src={post.thumbnail} alt={`Blog post thumbnail for: ${post.title}`} className="w-full h-full object-cover" />
                       </div>
                       <div className="p-6 flex flex-col flex-grow">
                         <span className="inline-block bg-brand-gradient text-white text-xs px-3 py-1 rounded-full mb-3">

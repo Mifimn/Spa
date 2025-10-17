@@ -1,5 +1,5 @@
 import { useState } from 'react';
-// Import animation components from the library
+import { Helmet } from 'react-helmet-async'; // <-- 1. Import Helmet for SEO
 import { Fade, Slide } from 'react-awesome-reveal';
 
 export default function Contact() {
@@ -75,6 +75,15 @@ export default function Contact() {
 
   return (
     <div>
+      {/* 2. Add the Helmet block for this page's SEO */}
+      <Helmet>
+        <title>Book Your Home Appointment - Contact Life Care Aesthetics</title>
+        <meta
+          name="description"
+          content="Ready to enhance your beauty? Contact us today to book your convenient home service appointment for dental or wellness treatments in Lagos."
+        />
+      </Helmet>
+
       {/* Hero Banner */}
       <section className="bg-gradient-to-r from-sage-primary to-sage-dark text-white py-20">
         <div className="max-w-7xl mx-auto px-4 text-center">
@@ -86,13 +95,13 @@ export default function Contact() {
       </section>
 
       {/* Contact Form and Info */}
-      <section className="py-16">
+      <section className="py-16 bg-cream-light">
         <div className="max-w-7xl mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
             {/* Contact Form */}
             <Slide direction="left" triggerOnce>
               <div className="bg-white p-8 rounded-lg shadow-lg">
-                <h2 className="text-3xl font-bold mb-6">Send Us a Message</h2>
+                <h2 className="text-3xl font-bold mb-6 text-sage-primary">Send Us a Message</h2>
                 <form onSubmit={handleSubmit} className="space-y-4">
                   <div>
                     <label className="block text-gray-700 font-semibold mb-2">
@@ -140,7 +149,7 @@ export default function Contact() {
                       className={`w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-sage-primary ${
                         errors.phone ? 'border-red-500' : 'border-gray-300'
                       }`}
-                      placeholder="(555) 123-4567"
+                      placeholder="+234 123 456 7890"
                     />
                     {errors.phone && <p className="text-red-500 text-sm mt-1">{errors.phone}</p>}
                   </div>
@@ -201,39 +210,31 @@ export default function Contact() {
             <Slide direction="right" triggerOnce>
               <div>
                 <div className="bg-white p-8 rounded-lg shadow-lg mb-8">
-                  <h2 className="text-3xl font-bold mb-6">Contact Information</h2>
+                  <h2 className="text-3xl font-bold mb-6 text-sage-primary">Contact Information</h2>
                   <div className="space-y-6">
                     <div className="flex items-start">
-                      <svg className="w-6 h-6 text-sage-primary mt-1 mr-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
-                      </svg>
+                      <svg className="w-6 h-6 text-sage-primary mt-1 mr-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" /></svg>
                       <div>
                         <h3 className="font-semibold text-lg mb-1">Service Area</h3>
-                        <p className="text-gray-600">Home Service Only<br />We come to you!</p>
+                        <p className="text-gray-600">Lagos, Nigeria<br />(Home Service Only)</p>
                       </div>
                     </div>
                     <div className="flex items-start">
-                      <svg className="w-6 h-6 text-sage-primary mt-1 mr-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                      </svg>
+                      <svg className="w-6 h-6 text-sage-primary mt-1 mr-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" /></svg>
                       <div>
                         <h3 className="font-semibold text-lg mb-1">Phone</h3>
-                        <a href="tel:+2349030699797" className="text-gray-600 hover:text-sage-primary">+234-903-069-9797</a>
+                        <a href="tel:+2349030699797" className="text-gray-600 hover:text-sage-primary">+234 903 069 9797</a>
                       </div>
                     </div>
                     <div className="flex items-start">
-                      <svg className="w-6 h-6 text-sage-primary mt-1 mr-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                      </svg>
+                      <svg className="w-6 h-6 text-sage-primary mt-1 mr-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
                       <div>
                         <h3 className="font-semibold text-lg mb-1">Email</h3>
                         <a href="mailto:thelifecareaesthetics@gmail.com" className="text-gray-600 hover:text-sage-primary">thelifecareaesthetics@gmail.com</a>
                       </div>
                     </div>
                     <div className="flex items-start">
-                      <svg className="w-6 h-6 text-sage-primary mt-1 mr-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                      </svg>
+                      <svg className="w-6 h-6 text-sage-primary mt-1 mr-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
                       <div>
                         <h3 className="font-semibold text-lg mb-1">Booking Hours</h3>
                         <p className="text-gray-600">
@@ -245,14 +246,11 @@ export default function Contact() {
                     </div>
                   </div>
                 </div>
-                <div className="bg-gradient-to-br from-sage-primary to-sage-dark h-80 rounded-lg flex items-center justify-center text-white p-8">
+                <div className="bg-gradient-to-br from-sage-primary to-sage-dark rounded-lg flex items-center justify-center text-white p-8">
                   <div className="text-center">
-                    <svg className="w-20 h-20 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
-                    </svg>
+                    <svg className="w-20 h-20 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" /></svg>
                     <h3 className="text-2xl font-bold mb-2">We Come to You!</h3>
-                    <p className="text-lg mb-4">Life Care Aesthetics provides professional dental and wellness services at your home</p>
-                    <p className="text-sm italic">No need to travel - we bring the care to your doorstep</p>
+                    <p className="text-lg mb-4">Life Care Aesthetics provides professional dental and wellness services at your home in Lagos.</p>
                   </div>
                 </div>
               </div>
@@ -261,33 +259,9 @@ export default function Contact() {
         </div>
       </section>
 
-      {/* Online Booking CTA */}
-      <section className="bg-brand-gradient text-white py-16">
-        <div className="max-w-4xl mx-auto px-4 text-center">
-          <Fade direction="up" triggerOnce>
-            <h2 className="text-3xl font-bold mb-4">Ready to Book Your Home Service?</h2>
-            <p className="text-xl mb-8">Contact us today to schedule your appointment at your convenience</p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a href="tel:+2349030699797" className="bg-white text-sage-primary px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-100 transition">
-                Call Now
-              </a>
-              <a href="mailto:thelifecareaesthetics@gmail.com" className="bg-white text-sage-primary px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-100 transition">
-                Email Us
-              </a>
-            </div>
-          </Fade>
-        </div>
-      </section>
+      {/* Online Booking CTA (This section was removed as it's redundant on the contact page) */}
 
-      {/* Footer */}
-      <footer className="bg-gray-800 text-white py-8">
-        <div className="max-w-7xl mx-auto px-4 text-center">
-          <Fade triggerOnce>
-            <p>&copy; 2024 Life Care Aesthetics. All rights reserved.</p>
-            <p className="mt-2 text-sm italic">Enhance Your Natural Beauty</p>
-          </Fade>
-        </div>
-      </footer>
+      {/* Footer is handled by App.js */}
     </div>
   );
 }

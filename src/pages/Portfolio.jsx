@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-// Import the animation component
+import { Helmet } from 'react-helmet-async'; // <-- 1. Import Helmet for SEO
 import { Fade } from 'react-awesome-reveal';
 
 export default function Portfolio() {
@@ -17,76 +17,76 @@ export default function Portfolio() {
   }, []);
 
     const beforeAfterPhotos = [
-{ 
-id: 1, 
-service: 'Teeth Whitening', 
-title: 'Professional Teeth Whitening Results', 
-before: '/images/white_before.png', 
-after: '/images/white_after.png' 
-},
-{ 
-id: 2, 
-service: 'Scaling And Polishing', 
-title: 'Deep Cleaning Transformation', 
-before: '/images/cleaning_before.png', 
-after: '/images/cleaning_after.png' 
-},
-{ 
-id: 3, 
-service: 'Tooth Gems', 
-title: 'Decorative Tooth Gem Application', 
-before: '/images/gem_before.png', 
-after: '/images/gem_after.png' 
-},
-{ 
-id: 4, 
-service: 'Radiance IV', 
-title: 'Skin Brightening Results', 
-before: '/images/iv_before.png', 
-after: '/images/iv_after.png' 
-},
-{ 
-id: 5, 
-service: 'Gum Treatment', 
-title: 'Healthy Gums Restoration', 
-before: '/images/gum_before.png', 
-after: '/images/gum_after.png' 
-},
-{ 
-id: 6, 
-service: 'Fashion Braces', 
-title: 'Stylish Braces Installation', 
-before: '/images/bracelet_before.png', 
-after: '/images/bracelet_after.png' 
-},
-];
+    {
+    id: 1,
+    service: 'Teeth Whitening',
+    title: 'Professional Teeth Whitening Results',
+    before: '/images/white_before.png',
+    after: '/images/white_after.png'
+    },
+    {
+    id: 2,
+    service: 'Scaling And Polishing',
+    title: 'Deep Cleaning Transformation',
+    before: '/images/cleaning_before.png',
+    after: '/images/cleaning_after.png'
+    },
+    {
+    id: 3,
+    service: 'Tooth Gems',
+    title: 'Decorative Tooth Gem Application',
+    before: '/images/gem_before.png',
+    after: '/images/gem_after.png'
+    },
+    {
+    id: 4,
+    service: 'Radiance IV',
+    title: 'Skin Brightening Results',
+    before: '/images/iv_before.png',
+    after: '/images/iv_after.png'
+    },
+    {
+    id: 5,
+    service: 'Gum Treatment',
+    title: 'Healthy Gums Restoration',
+    before: '/images/gum_before.png',
+    after: '/images/gum_after.png'
+    },
+    {
+    id: 6,
+    service: 'Fashion Braces',
+    title: 'Stylish Braces Installation',
+    before: '/images/bracelet_before.png',
+    after: '/images/bracelet_after.png'
+    },
+  ];
 
-const treatmentVideos = [
-{ 
-id: 1, 
-title: 'Teeth Whitening Procedure', 
-thumbnail: 'https://images.unsplash.com/photo-1606811971618-4486d14f3f99?w=600&q=80', 
-videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ' 
-},
-{ 
-id: 2, 
-title: 'Scaling and Polishing Process', 
-thumbnail: 'https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=600&q=80', 
-videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ' 
-},
-{ 
-id: 3, 
-title: 'IV Drip Treatment at Home', 
-thumbnail: 'https://images.unsplash.com/photo-1579154204601-01588f351e67?w=600&q=80', 
-videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ' 
-},
-{ 
-id: 4, 
-title: 'Tooth Gem Application', 
-thumbnail: 'https://images.unsplash.com/photo-1606811971618-4486d14f3f99?w=600&q=80', 
-videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ' 
-},
-];
+  const treatmentVideos = [
+    {
+    id: 1,
+    title: 'Teeth Whitening Procedure',
+    thumbnail: 'https://images.unsplash.com/photo-1606811971618-4486d14f3f99?w=600&q=80',
+    videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ'
+    },
+    {
+    id: 2,
+    title: 'Scaling and Polishing Process',
+    thumbnail: 'https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=600&q=80',
+    videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ'
+    },
+    {
+    id: 3,
+    title: 'IV Drip Treatment at Home',
+    thumbnail: 'https://images.unsplash.com/photo-1579154204601-01588f351e67?w=600&q=80',
+    videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ'
+    },
+    {
+    id: 4,
+    title: 'Tooth Gem Application',
+    thumbnail: 'https://images.unsplash.com/photo-1606811971618-4486d14f3f99?w=600&q=80',
+    videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ'
+    },
+  ];
 
   const serviceTypes = ['all', 'Teeth Whitening', 'Scaling And Polishing', 'Tooth Gems', 'Gum Treatment', 'Fashion Braces', 'Radiance IV'];
 
@@ -96,12 +96,21 @@ videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ' 
 
   return (
     <div>
+      {/* 2. Add the Helmet block for this page's SEO */}
+      <Helmet>
+        <title>See Our Results | Before & After Photos - Life Care Aesthetics</title>
+        <meta
+          name="description"
+          content="View real client transformations in Lagos. See before and after photos of our teeth whitening, gum treatments, and skin brightening IV drip services."
+        />
+      </Helmet>
+
       {/* Hero Banner */}
       <section className="relative py-20 text-white">
         <div className="absolute inset-0">
           <img
             src="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?w=1920&q=80"
-            alt="Portfolio background"
+            alt="A confident client after an aesthetic treatment in Lagos" // <-- SEO Update
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-sage-primary/60"></div>
@@ -115,7 +124,7 @@ videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ' 
       </section>
 
       {/* Tab Selector */}
-      <section className="bg-white border-b">
+      <section className="bg-white border-b sticky top-[80px] z-40">
         <div className="max-w-7xl mx-auto px-4">
           <Fade direction="up" triggerOnce>
             <div className="flex justify-center space-x-4 py-6">
@@ -148,7 +157,6 @@ videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ' 
       {activeTab === 'photos' && (
         <section className="py-16 bg-cream-light">
           <div className="max-w-7xl mx-auto px-4">
-            {/* Filter */}
             <Fade direction="down" cascade damping={0.1} triggerOnce>
               <div className="flex flex-wrap justify-center gap-3 mb-12">
                 {serviceTypes.map(type => (
@@ -167,13 +175,12 @@ videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ' 
               </div>
             </Fade>
 
-            {/* Photo Grid */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {filteredPhotos.map((photo, index) => (
                 <Fade
                   key={photo.id}
                   direction="up"
-                  delay={index * 100} // Staggered delay for each card
+                  delay={index * 100}
                   triggerOnce
                 >
                   <div
@@ -182,11 +189,13 @@ videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ' 
                   >
                     <div className="flex">
                       <div className="w-1/2 h-64 relative">
-                        <img src={photo.before} alt="Before" className="w-full h-full object-cover" />
+                        {/* SEO Update: Descriptive alt text */}
+                        <img src={photo.before} alt={`Before photo of ${photo.title}`} className="w-full h-full object-cover" />
                         <span className="absolute bottom-2 left-2 bg-black/70 text-white px-2 py-1 rounded text-sm font-semibold">Before</span>
                       </div>
                       <div className="w-1/2 h-64 relative">
-                        <img src={photo.after} alt="After" className="w-full h-full object-cover" />
+                        {/* SEO Update: Descriptive alt text */}
+                        <img src={photo.after} alt={`After photo of ${photo.title}`} className="w-full h-full object-cover" />
                         <span className="absolute bottom-2 right-2 bg-black/70 text-white px-2 py-1 rounded text-sm font-semibold">After</span>
                       </div>
                     </div>
@@ -213,7 +222,7 @@ videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ' 
                 <Fade
                   key={video.id}
                   direction="up"
-                  delay={index * 100} // Staggered delay for each card
+                  delay={index * 100}
                   triggerOnce
                 >
                   <div
@@ -221,7 +230,8 @@ videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ' 
                     className="bg-white rounded-lg shadow-md overflow-hidden cursor-pointer hover:shadow-xl transition"
                   >
                     <div className="relative h-64">
-                      <img src={video.thumbnail} alt={video.title} className="w-full h-full object-cover" />
+                      {/* SEO Update: Descriptive alt text */}
+                      <img src={video.thumbnail} alt={`Video thumbnail for ${video.title}`} className="w-full h-full object-cover" />
                       <div className="absolute inset-0 flex items-center justify-center bg-black/30 hover:bg-black/40 transition">
                         <div className="w-16 h-16 bg-brand-gradient rounded-full flex items-center justify-center">
                           <svg className="w-8 h-8 text-white ml-1" fill="currentColor" viewBox="0 0 20 20">
@@ -261,24 +271,24 @@ videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ' 
             </button>
 
             {selectedMedia.type === 'photo' ? (
-                <div className="bg-white rounded-lg overflow-hidden">
-                    <div className="flex flex-col md:flex-row">
-                        <div className="w-full md:w-1/2 h-64 md:h-96 relative">
-                            <img src={selectedMedia.data.before} alt="Before" className="w-full h-full object-cover" />
-                            <span className="absolute bottom-4 left-4 bg-black/70 text-white px-3 py-2 rounded text-lg font-semibold">Before</span>
-                        </div>
-                        <div className="w-full md:w-1/2 h-64 md:h-96 relative">
-                            <img src={selectedMedia.data.after} alt="After" className="w-full h-full object-cover" />
-                            <span className="absolute bottom-4 right-4 bg-black/70 text-white px-3 py-2 rounded text-lg font-semibold">After</span>
-                        </div>
-                    </div>
-                    <div className="p-6">
-                        <h3 className="text-2xl font-bold mb-2">{selectedMedia.data.title}</h3>
-                        <span className="inline-block bg-brand-gradient text-white px-3 py-1 rounded-full text-sm">
-                            {selectedMedia.data.service}
-                        </span>
-                    </div>
+              <div className="bg-white rounded-lg overflow-hidden">
+                <div className="flex flex-col md:flex-row">
+                  <div className="w-full md:w-1/2 h-64 md:h-96 relative">
+                    <img src={selectedMedia.data.before} alt={`Before photo in modal for ${selectedMedia.data.title}`} className="w-full h-full object-cover" />
+                    <span className="absolute bottom-4 left-4 bg-black/70 text-white px-3 py-2 rounded text-lg font-semibold">Before</span>
+                  </div>
+                  <div className="w-full md:w-1/2 h-64 md:h-96 relative">
+                    <img src={selectedMedia.data.after} alt={`After photo in modal for ${selectedMedia.data.title}`} className="w-full h-full object-cover" />
+                    <span className="absolute bottom-4 right-4 bg-black/70 text-white px-3 py-2 rounded text-lg font-semibold">After</span>
+                  </div>
                 </div>
+                <div className="p-6">
+                  <h3 className="text-2xl font-bold mb-2">{selectedMedia.data.title}</h3>
+                  <span className="inline-block bg-brand-gradient text-white px-3 py-1 rounded-full text-sm">
+                    {selectedMedia.data.service}
+                  </span>
+                </div>
+              </div>
             ) : (
               <div className="bg-white rounded-lg overflow-hidden">
                 <div className="aspect-video">

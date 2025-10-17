@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-// Import the animation component from the library
+import { Helmet } from 'react-helmet-async'; // <-- 1. Import Helmet for SEO
 import { Fade } from 'react-awesome-reveal';
 
 export default function Services() {
@@ -111,12 +111,21 @@ export default function Services() {
 
   return (
     <div>
+      {/* 2. Add the Helmet block for this page's SEO */}
+      <Helmet>
+        <title>Our Aesthetic Home Services | Teeth Whitening, IV Drips & More</title>
+        <meta
+          name="description"
+          content="Explore our full range of home delivery services in Lagos, including professional teeth whitening, detox & radiance IV drips, gum treatment, and fashion braces."
+        />
+      </Helmet>
+
       {/* Hero Banner */}
       <section className="relative py-20 text-white">
         <div className="absolute inset-0">
           <img
             src="https://images.unsplash.com/photo-1606811971618-4486d14f3f99?w=1920&q=80"
-            alt="Services background"
+            alt="Life Care Aesthetics home delivery services background" // <-- SEO Update
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-sage-primary/60"></div>
@@ -135,7 +144,6 @@ export default function Services() {
         <Fade direction="down" triggerOnce>
           <div className="max-w-7xl mx-auto px-4 py-6">
             <div className="flex flex-col md:flex-row gap-4 items-center justify-between">
-              {/* Search Bar */}
               <div className="w-full md:w-96">
                 <div className="relative">
                   <input
@@ -151,7 +159,6 @@ export default function Services() {
                 </div>
               </div>
 
-              {/* Category Filter */}
               <div className="flex flex-wrap gap-2 justify-center">
                 {allCategories.map(category => (
                   <button
@@ -191,16 +198,15 @@ export default function Services() {
                 </Fade>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                   {category.services.map((service, svcIdx) => (
-                    // Staggered animation for each service card
                     <Fade key={svcIdx} direction="up" delay={svcIdx * 100} triggerOnce>
                       <div className="bg-white border border-gray-200 rounded-lg shadow-md hover:shadow-xl transition overflow-hidden flex flex-col h-full">
                         <div className="h-48 overflow-hidden">
-                          <img src={service.image} alt={service.name} className="w-full h-full object-cover" />
+                          {/* SEO Update: Descriptive alt text */}
+                          <img src={service.image} alt={`At-home ${service.name} service in Lagos`} className="w-full h-full object-cover" />
                         </div>
                         <div className="p-6 flex flex-col flex-grow">
                           <h3 className="text-xl font-bold mb-3">{service.name}</h3>
                           <p className="text-gray-600 mb-4 flex-grow">{service.description}</p>
-
                           <a
                             href={service.whatsappLink}
                             target="_blank"

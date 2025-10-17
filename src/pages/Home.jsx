@@ -1,22 +1,30 @@
 import { Link } from 'react-router-dom';
-// Import the animation components from the library
+import { Helmet } from 'react-helmet-async'; // <-- 1. Import Helmet for SEO
 import { Fade, Slide } from "react-awesome-reveal";
 
 export default function Home() {
   return (
     <div>
+      {/* 2. Add the Helmet block for this page's SEO */}
+      <Helmet>
+        <title>Home Service Dental & IV Drips in Lagos - Life Care Aesthetics</title>
+        <meta 
+          name="description" 
+          content="Professional at-home aesthetic services in Lagos. We offer teeth whitening, IV drips, scaling, and more, delivered to your doorstep by Nurse Blessing." 
+        />
+      </Helmet>
+
       {/* Hero Section */}
       <section className="relative h-screen bg-gradient-to-br from-gray-900 to-gray-800 flex items-center justify-center text-white overflow-hidden">
         <div className="absolute inset-0">
           <img
             src="https://images.unsplash.com/photo-1606811971618-4486d14f3f99?w=1920&q=80"
-            alt="Dental care"
+            alt="Dental care at home in Lagos" // <-- SEO Update: More descriptive alt text
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-sage-primary/50"></div>
         </div>
         <div className="relative z-10 text-center px-4">
-          {/* Animation for Hero Text on page load */}
           <Fade direction="up" cascade damping={0.2} triggerOnce>
             <h1 className="text-5xl md:text-7xl font-bold mb-6">Enhance Your Natural Beauty</h1>
             <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">Life Care Aesthetics offers premium dental and wellness services delivered to your home.</p>
@@ -31,7 +39,6 @@ export default function Home() {
       <section className="bg-white py-8 border-b">
         <div className="max-w-7xl mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
-            {/* Staggered animation for each item in the trust bar */}
             <Fade direction="up" cascade damping={0.3} triggerOnce>
               <div className="flex flex-col items-center">
                 <div className="w-16 h-16 bg-brand-gradient rounded-full flex items-center justify-center mb-4">
@@ -69,10 +76,10 @@ export default function Home() {
       <section className="py-16 bg-cream-light">
         <div className="max-w-7xl mx-auto px-4">
           <Fade direction="down" triggerOnce>
-            <h2 className="text-4xl font-bold text-center mb-12 text-sage-primary">Our Services</h2>
+             {/* SEO Update: More keyword-rich heading */}
+            <h2 className="text-4xl font-bold text-center mb-12 text-sage-primary">Our Aesthetic Home Services</h2>
           </Fade>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {/* Staggered animation for each service card */}
             <Fade cascade damping={0.2} triggerOnce>
               {[
                 { name: 'Teeth Whitening', desc: 'Professional whitening for a brighter smile', img: 'https://images.unsplash.com/photo-1606811971618-4486d14f3f99?w=400&q=80' },
@@ -81,7 +88,7 @@ export default function Home() {
                 { name: 'Tooth Gems', desc: 'Decorative dental jewelry', img: 'https://images.unsplash.com/photo-1606811971618-4486d14f3f99?w=400&q=80' }
               ].map((service, idx) => (
                 <div key={idx} className="bg-white rounded-lg shadow-md hover:shadow-xl transition h-full overflow-hidden">
-                  <img src={service.img} alt={service.name} className="w-full h-48 object-cover" />
+                  <img src={service.img} alt={`${service.name} home service in Lagos`} className="w-full h-48 object-cover" />
                   <div className="p-6">
                     <h3 className="text-xl font-bold mb-2">{service.name}</h3>
                     <p className="text-gray-600 mb-4">{service.desc}</p>
@@ -101,7 +108,6 @@ export default function Home() {
             <h2 className="text-4xl font-bold text-center mb-12 text-sage-primary">What Our Clients Say</h2>
           </Fade>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {/* Staggered animation for each testimonial */}
             <Fade cascade damping={0.3} triggerOnce>
               {[
                 { name: 'Sarah M.', text: 'Amazing home service! The teeth whitening was professional and convenient.' },
@@ -129,15 +135,13 @@ export default function Home() {
       <section className="py-16 bg-cream-light">
         <div className="max-w-7xl mx-auto px-4">
           <div className="flex flex-col md:flex-row items-center gap-12">
-            {/* Slide-in animation for the image */}
             <Slide direction="left" triggerOnce className="flex-shrink-0">
               <img
                 src="/images/blessing.jpg"
-                alt="Nurse Blessing"
+                alt="Nurse Blessing of Life Care Aesthetics, providing at-home IV drips in Lagos" // <-- SEO Update
                 className="w-64 h-64 rounded-lg object-cover shadow-lg"
               />
             </Slide>
-            {/* Slide-in animation for the text */}
             <Slide direction="right" triggerOnce>
               <div>
                 <h2 className="text-4xl font-bold mb-4 text-sage-primary">Meet Nurse Blessing</h2>
