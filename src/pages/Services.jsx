@@ -80,112 +80,112 @@ export default function Services() {
           price: '₦100,000',
           duration: '1 hr',
           description: 'Deep hydration for luminous skin',
-          image: 'https://images.unsplash.com/photo-1560750588-73207b1ef5b8?w=400&q=80'
+          image: '/images/hydra_glow_facial.jpg'
         },
         {
           name: 'Glow Peel Facial',
           price: '₦80,000',
           duration: '1 hr',
           description: 'Chemical peel for radiant complexion',
-          image: 'https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?w=400&q=80'
+          image: '/images/glow_peel_facial.jpg'
         },
         {
           name: 'Advanced Acne Facial',
           price: '₦75,000',
           duration: '1 hr',
           description: 'Targeted treatment for acne-prone skin',
-          image: 'https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?w=400&q=80'
+          image: '/images/advanced_acne_facial.jpg'
         },
         {
           name: 'Rejuvenating Facial',
           price: '₦65,000',
           duration: '1 hr',
           description: 'Revitalize and refresh your skin',
-          image: 'https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?w=400&q=80'
+          image: '/images/rejuvenating_facial.jpg'
         },
         {
           name: 'Purifying Acne Facial',
           price: '₦65,000',
           duration: '1 hr',
           description: 'Deep cleansing for clear skin',
-          image: 'https://images.unsplash.com/photo-1522338242992-e1a54906a8da?w=400&q=80'
+          image: '/images/purifying_acne_facial.jpg'
         },
         {
           name: 'Signature Hydrating Facial',
           price: '₦80,000',
           duration: '1 hr',
           description: 'Intense moisture boost',
-          image: 'https://images.unsplash.com/photo-1515377905703-c4788e51af15?w=400&q=80'
+          image: '/images/signature_hydrating_facial.jpg'
         },
         {
           name: 'Dermaplanning',
           price: '₦60,000',
           duration: '1 hr',
           description: 'Gentle exfoliation for smooth skin',
-          image: 'https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=400&q=80'
+          image: '/images/dermaplanning.jpg'
         },
         {
           name: 'Deep Cleansing Facial',
           price: '₦35,000',
           duration: '1 hr',
           description: 'Thorough pore cleansing',
-          image: 'https://images.unsplash.com/photo-1594312915251-48db9280c8f1?w=400&q=80'
+          image: '/images/deep_cleansing_facial.jpg'
         },
         {
           name: 'Brightening Facial',
           price: '₦50,000',
           duration: '1 hr',
           description: 'Illuminate dull complexion',
-          image: 'https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?w=400&q=80'
+          image: '/images/brightening_facial.jpg'
         },
         {
           name: 'Anti-Aging Facial',
           price: '₦90,000',
           duration: '1 hr',
           description: 'Combat signs of aging',
-          image: 'https://images.unsplash.com/photo-1614252368970-c1b3d43e8ccd?w=400&q=80'
+          image: 'public/images/anti_aging_facial.jpg'
         },
         {
           name: 'Chemical Peel',
           price: '₦100,000',
           duration: '1 hr',
           description: 'Advanced skin resurfacing',
-          image: 'https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=400&q=80'
+          image: '/images/chemical_peel.jpg'
         },
         {
           name: 'Microneedling with PRP',
           price: '₦120,000',
           duration: '1 hr',
           description: 'Collagen induction with platelet-rich plasma',
-          image: 'https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=400&q=80'
+          image: '/images/microneedling_with_prp.jpg'
         },
         {
           name: 'Microneedling with Amitone Brightening',
           price: '₦150,000',
           duration: '1 hr',
           description: 'Advanced brightening treatment',
-          image: 'https://images.unsplash.com/photo-1560750588-73207b1ef5b8?w=400&q=80'
+          image: '/images/microneedling_with_amitone.jpg'
         },
         {
           name: 'Microneedling with Serum',
           price: '₦90,000',
           duration: '1 hr',
           description: 'Microneedling with specialized serums',
-          image: 'https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?w=400&q=80'
+          image: '/images/microneedling_with_serum.jpg'
         },
         {
           name: 'Mesotherapy with PRP',
           price: '₦150,000',
           duration: '1 hr',
           description: 'Skin rejuvenation with PRP',
-          image: 'https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?w=400&q=80'
+          image: '/images/mesotherapy_with_prp.jpg'
         },
         {
           name: 'Mesotherapy with Serum',
           price: '₦100,000',
           duration: '1 hr',
           description: 'Targeted skin therapy',
-          image: 'https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?w=400&q=80'
+          image: '/images/mesotherapy_with_serum.jpeg'
         }
       ]
     },
@@ -197,7 +197,7 @@ export default function Services() {
           price: '₦100,000',
           duration: '1 hr',
           description: 'Couples massage experience',
-          image: 'https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=400&q=80'
+          image: '/images'
         },
         {
           name: 'VCP Signature Massage',
