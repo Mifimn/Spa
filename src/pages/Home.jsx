@@ -17,7 +17,7 @@ export default function Home() {
           <h1 className="text-5xl md:text-7xl font-bold mb-6">Enhance Your Natural Beauty</h1>
           <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">Life Care Aesthetics offers premium dental and wellness services delivered to your home.</p>
           <button className="bg-brand-gradient text-white px-8 py-4 rounded-lg text-lg font-semibold hover:opacity-90 transition">
-            Book Home Delivery
+            Book Home Service Now
           </button>
         </div>
       </section>
@@ -32,7 +32,7 @@ export default function Home() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
                 </svg>
               </div>
-              <h3 className="font-bold text-lg">Home Delivery</h3>
+              <h3 className="font-bold text-lg">Home Service</h3>
               <p className="text-gray-600">Professional care at your doorstep</p>
             </div>
             <div className="flex flex-col items-center">
@@ -147,7 +147,7 @@ export default function Home() {
       <section className="py-16 bg-sage-primary text-white">
         <div className="max-w-7xl mx-auto px-4 text-center">
           <h2 className="text-4xl font-bold mb-4">Ready to Enhance Your Natural Beauty?</h2>
-          <p className="text-xl mb-8">Book your home delivery service today!</p>
+          <p className="text-xl mb-8">Book your home service today!</p>
           <button className="bg-white text-sage-primary px-8 py-4 rounded-lg text-lg font-semibold hover:bg-cream-light transition">
             Book Now
           </button>
