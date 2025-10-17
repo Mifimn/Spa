@@ -1,4 +1,3 @@
-
 import { Link, useLocation } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 
@@ -57,12 +56,17 @@ export default function Header() {
               <Link to="/contact" onClick={handleLinkClick} className="text-gray-700 hover:text-sage-primary transition">Contact</Link>
             </nav>
 
-            <button className="hidden md:block bg-brand-gradient text-white px-6 py-3 rounded-lg font-semibold hover:opacity-90 transition">
+            {/* UPDATED: Desktop Book Appointment Button is now a Link */}
+            <Link
+              to="/services" // Added link destination
+              onClick={handleLinkClick}
+              className="hidden md:block bg-brand-gradient text-white px-6 py-3 rounded-lg font-semibold hover:opacity-90 transition"
+            >
               Book Appointment
-            </button>
+            </Link>
 
-            {/* Mobile Menu Button */}
-            <button 
+            {/* Mobile Menu Button (unchanged as it controls the menu) */}
+            <button
               onClick={() => setIsOpen(!isOpen)}
               className="md:hidden p-2 text-sage-primary"
             >
@@ -84,9 +88,15 @@ export default function Header() {
               <Link to="/portfolio" onClick={handleLinkClick} className="block py-2 text-gray-700 hover:text-sage-primary">Portfolio</Link>
               <Link to="/blog" onClick={handleLinkClick} className="block py-2 text-gray-700 hover:text-sage-primary">Blog</Link>
               <Link to="/contact" onClick={handleLinkClick} className="block py-2 text-gray-700 hover:text-sage-primary">Contact</Link>
-              <button className="w-full bg-brand-gradient text-white px-6 py-3 rounded-lg font-semibold mt-2">
+
+              {/* UPDATED: Mobile Book Appointment Button is now a Link */}
+              <Link
+                to="/services" // Added link destination
+                onClick={handleLinkClick}
+                className="block w-full text-center bg-brand-gradient text-white px-6 py-3 rounded-lg font-semibold mt-2"
+              >
                 Book Appointment
-              </button>
+              </Link>
             </nav>
           )}
         </div>
