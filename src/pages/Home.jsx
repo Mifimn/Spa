@@ -128,7 +128,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4">
           <div className="flex flex-col md:flex-row items-center gap-12">
             <img 
-              src="https://images.unsplash.com/photo-15598397734-2b71ea197ec2?w=400&q=80" 
+              src="/images/blessing.jpg" 
               alt="Nurse Blessing"
               className="w-64 h-64 rounded-lg object-cover shadow-lg"
             />

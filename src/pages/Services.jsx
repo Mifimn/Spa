@@ -22,7 +22,7 @@ export default function Services() {
         {
           name: 'Scaling And Polishing',
           description: 'Professional teeth cleaning and polishing for a brighter smile',
-          image: '/images/scaling_polishing.jpg'
+          image: '/images/scaling_and_polishing.jpg'
         },
         {
           name: 'Teeth Whitening',
@@ -32,7 +32,7 @@ export default function Services() {
         {
           name: 'Tooth Gems',
           description: 'Decorative dental jewelry to enhance your smile',
-          image: '/images/tooth_gems.jpg'
+          image: '/images/tooth_gems.jpeg'
         },
         {
           name: 'Gum Treatment',
@@ -42,12 +42,12 @@ export default function Services() {
         {
           name: 'Fluoride Therapy',
           description: 'Strengthen tooth enamel and prevent cavities',
-          image: '/images/fluoride_therapy.jpg'
+          image: '/images/fluoride_therapy.webp'
         },
         {
           name: 'Fashion Braces',
           description: 'Stylish decorative braces to enhance your look',
-          image: '/images/fashion_braces.jpg'
+          image: '/images/fashion_braces.jpeg'
         }
       ]
     },
@@ -62,17 +62,17 @@ export default function Services() {
         {
           name: 'Energy Booster',
           description: 'Increase energy and vitality',
-          image: '/images/energy_booster.jpg'
+          image: '/images/energy_booster.jpeg'
         },
         {
           name: 'Immune Booster',
           description: 'Strengthen your immune system',
-          image: '/images/immune_booster.jpg'
+          image: '/images/immune_booster.jpeg'
         },
         {
           name: 'Radiance IV',
           description: 'Skin brightening and beauty enhancement',
-          image: '/images/radiance_iv.jpg'
+          image: '/images/radiance_iv.jpeg'
         }
       ]
     }
