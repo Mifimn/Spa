@@ -54,9 +54,11 @@ export default function Contact() {
     const newErrors = validateForm();
 
     if (Object.keys(newErrors).length === 0) {
-      // Form is valid, submit data
-      console.log('Form submitted:', formData);
-      alert('Thank you! We will contact you soon.');
+      // Form is valid, send via mailto
+      const subject = encodeURIComponent(`Service Inquiry - ${formData.service || 'General'}`);
+      const body = encodeURIComponent(`Name: ${formData.name}\nEmail: ${formData.email}\nPhone: ${formData.phone}\nService: ${formData.service || 'Not specified'}\n\nMessage:\n${formData.message}`);
+      window.location.href = `mailto:thelifecareaesthetics@gmail.com?subject=${subject}&body=${body}`;
+      
       setFormData({
         name: '',
         email: '',
@@ -72,10 +74,10 @@ export default function Contact() {
   return (
     <div>
       {/* Hero Banner */}
-      <section className="bg-gradient-to-r from-instagram-blue to-purple-700 text-white py-20">
+      <section className="bg-gradient-to-r from-sage-primary to-sage-dark text-white py-20">
         <div className="max-w-7xl mx-auto px-4 text-center">
-          <h1 className="text-5xl font-bold mb-4">Ready to Start Your Transformation?</h1>
-          <p className="text-xl">Let's discuss your aesthetic goals</p>
+          <h1 className="text-5xl font-bold mb-4">Ready to Enhance Your Natural Beauty?</h1>
+          <p className="text-xl">Book your home service appointment today</p>
         </div>
       </section>
 
@@ -146,15 +148,19 @@ export default function Contact() {
                     name="service"
                     value={formData.service}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-gold-primary"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-sage-primary"
                   >
                     <option value="">Select a service</option>
-                    <option value="botox">Botox</option>
-                    <option value="fillers">Dermal Fillers</option>
-                    <option value="morpheus8">Morpheus8</option>
-                    <option value="laser">Laser Treatments</option>
-                    <option value="facials">Advanced Facials</option>
-                    <option value="dental">Dental Aesthetics</option>
+                    <option value="teeth-whitening">Teeth Whitening</option>
+                    <option value="scaling-polishing">Scaling And Polishing</option>
+                    <option value="tooth-gems">Tooth Gems</option>
+                    <option value="gum-treatment">Gum Treatment</option>
+                    <option value="fluoride-therapy">Fluoride Therapy</option>
+                    <option value="fashion-braces">Fashion Braces</option>
+                    <option value="detox-iv">Detox IV</option>
+                    <option value="energy-booster">Energy Booster</option>
+                    <option value="immune-booster">Immune Booster</option>
+                    <option value="radiance-iv">Radiance IV</option>
                     <option value="consultation">General Consultation</option>
                   </select>
                 </div>
@@ -185,68 +191,67 @@ export default function Contact() {
               </form>
             </div>
 
-            {/* Clinic Information */}
+            {/* Contact Information */}
             <div>
               <div className="bg-white p-8 rounded-lg shadow-lg mb-8">
-                <h2 className="text-3xl font-bold mb-6">Visit Our Clinic</h2>
+                <h2 className="text-3xl font-bold mb-6">Contact Information</h2>
 
                 <div className="space-y-6">
                   <div className="flex items-start">
-                    <svg className="w-6 h-6 text-gold-primary mt-1 mr-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                    <svg className="w-6 h-6 text-sage-primary mt-1 mr-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
                     </svg>
                     <div>
-                      <h3 className="font-semibold text-lg mb-1">Address</h3>
-                      <p className="text-gray-600">123 Aesthetic Lane<br />Beauty City, ST 12345</p>
+                      <h3 className="font-semibold text-lg mb-1">Service Area</h3>
+                      <p className="text-gray-600">Home Service Only<br />We come to you!</p>
                     </div>
                   </div>
 
                   <div className="flex items-start">
-                    <svg className="w-6 h-6 text-gold-primary mt-1 mr-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-6 h-6 text-sage-primary mt-1 mr-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                     </svg>
                     <div>
                       <h3 className="font-semibold text-lg mb-1">Phone</h3>
-                      <p className="text-gray-600">(555) 123-4567</p>
+                      <a href="tel:+2349030699797" className="text-gray-600 hover:text-sage-primary">+234-903-069-9797</a>
                     </div>
                   </div>
 
                   <div className="flex items-start">
-                    <svg className="w-6 h-6 text-gold-primary mt-1 mr-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-6 h-6 text-sage-primary mt-1 mr-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                     </svg>
                     <div>
                       <h3 className="font-semibold text-lg mb-1">Email</h3>
-                      <p className="text-gray-600">info@vcplaser.com</p>
+                      <a href="mailto:thelifecareaesthetics@gmail.com" className="text-gray-600 hover:text-sage-primary">thelifecareaesthetics@gmail.com</a>
                     </div>
                   </div>
 
                   <div className="flex items-start">
-                    <svg className="w-6 h-6 text-gold-primary mt-1 mr-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-6 h-6 text-sage-primary mt-1 mr-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                     </svg>
                     <div>
-                      <h3 className="font-semibold text-lg mb-1">Hours</h3>
+                      <h3 className="font-semibold text-lg mb-1">Booking Hours</h3>
                       <p className="text-gray-600">
-                        Monday - Friday: 9:00 AM - 7:00 PM<br />
-                        Saturday: 10:00 AM - 4:00 PM<br />
-                        Sunday: Closed
+                        Monday - Saturday: 9:00 AM - 8:00 PM<br />
+                        Sunday: 10:00 AM - 6:00 PM<br />
+                        <span className="text-sm italic">Flexible scheduling available</span>
                       </p>
                     </div>
                   </div>
                 </div>
               </div>
 
-              {/* Google Maps Placeholder */}
-              <div className="bg-gray-300 h-80 rounded-lg flex items-center justify-center">
-                <div className="text-center text-gray-600">
-                  <svg className="w-16 h-16 mx-auto mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+              {/* Home Service Notice */}
+              <div className="bg-gradient-to-br from-sage-primary to-sage-dark h-80 rounded-lg flex items-center justify-center text-white p-8">
+                <div className="text-center">
+                  <svg className="w-20 h-20 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
                   </svg>
-                  <p className="font-semibold">Google Maps Embed</p>
-                  <p className="text-sm">Interactive map will be placed here</p>
+                  <h3 className="text-2xl font-bold mb-2">We Come to You!</h3>
+                  <p className="text-lg mb-4">Life Care Aesthetics provides professional dental and wellness services at your home</p>
+                  <p className="text-sm italic">No need to travel - we bring the care to your doorstep</p>
                 </div>
               </div>
             </div>
@@ -255,21 +260,26 @@ export default function Contact() {
       </section>
 
       {/* Online Booking CTA */}
-      <section className="bg-gold-gradient text-white py-16">
+      <section className="bg-brand-gradient text-white py-16">
         <div className="max-w-4xl mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold mb-4">Prefer to Book Online?</h2>
-          <p className="text-xl mb-8">Schedule your appointment instantly through our secure booking portal</p>
-          <button className="bg-white text-purple-primary px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-100 transition">
-            Book Online Instantly
-          </button>
+          <h2 className="text-3xl font-bold mb-4">Ready to Book Your Home Service?</h2>
+          <p className="text-xl mb-8">Contact us today to schedule your appointment at your convenience</p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <a href="tel:+2349030699797" className="bg-white text-sage-primary px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-100 transition">
+              Call Now
+            </a>
+            <a href="mailto:thelifecareaesthetics@gmail.com" className="bg-white text-sage-primary px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-100 transition">
+              Email Us
+            </a>
+          </div>
         </div>
       </section>
 
       {/* Footer */}
       <footer className="bg-gray-800 text-white py-8">
         <div className="max-w-7xl mx-auto px-4 text-center">
-          <p>&copy; 2023 Vcplaser. All rights reserved.</p>
-          <p className="mt-2">Designed by mifimn</p>
+          <p>&copy; 2024 Life Care Aesthetics. All rights reserved.</p>
+          <p className="mt-2 text-sm italic">Enhance Your Natural Beauty</p>
         </div>
       </footer>
     </div>

@@ -20,43 +20,43 @@ export default function Portfolio() {
       id: 1, 
       service: 'Teeth Whitening', 
       title: 'Professional Teeth Whitening Results', 
-      before: 'https://images.unsplash.com/photo-1606811971618-4486d14f3f99?w=600&q=80', 
-      after: 'https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=600&q=80' 
+      before: 'https://dentistrytoday.com/wp-content/uploads/2022/03/GettyImages-1125663924-before-after-teeth-whitening.jpg', 
+      after: 'https://www.thedentalstudio.ie/wp-content/uploads/2020/01/teeth-whitening-before-after-1.jpg' 
     },
     { 
       id: 2, 
       service: 'Scaling And Polishing', 
       title: 'Deep Cleaning Transformation', 
-      before: 'https://images.unsplash.com/photo-1606811971618-4486d14f3f99?w=600&q=80', 
-      after: 'https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=600&q=80' 
+      before: 'https://www.noosadentalcentre.com.au/wp-content/uploads/2020/03/teeth-cleaning-before.jpg', 
+      after: 'https://www.noosadentalcentre.com.au/wp-content/uploads/2020/03/teeth-cleaning-after.jpg' 
     },
     { 
       id: 3, 
       service: 'Tooth Gems', 
       title: 'Decorative Tooth Gem Application', 
-      before: 'https://images.unsplash.com/photo-1606811971618-4486d14f3f99?w=600&q=80', 
-      after: 'https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=600&q=80' 
+      before: 'https://i.pinimg.com/originals/93/5e/8f/935e8f8c0e7d0c7e0f5c4e4d5c8e7f5c.jpg', 
+      after: 'https://i.pinimg.com/736x/8f/5e/93/8f5e93c0e7d0c7e0f5c4e4d5c8e7f5c.jpg' 
     },
     { 
       id: 4, 
       service: 'Radiance IV', 
       title: 'Skin Brightening Results', 
-      before: 'https://images.unsplash.com/photo-1560750588-73207b1ef5b8?w=600&q=80', 
-      after: 'https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=600&q=80' 
+      before: 'https://www.healthline.com/hlcmsresource/images/topic_centers/2019-8/before-after-vitamin-c-serum-732x549-thumbnail.jpg', 
+      after: 'https://www.healthline.com/hlcmsresource/images/topic_centers/2019-8/vitamin-c-serum-results-732x549-thumbnail.jpg' 
     },
     { 
       id: 5, 
       service: 'Gum Treatment', 
       title: 'Healthy Gums Restoration', 
-      before: 'https://images.unsplash.com/photo-1606811971618-4486d14f3f99?w=600&q=80', 
-      after: 'https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=600&q=80' 
+      before: 'https://www.drkatarmal.com/wp-content/uploads/2019/07/Gum-Disease-Treatment-Before.jpg', 
+      after: 'https://www.drkatarmal.com/wp-content/uploads/2019/07/Gum-Disease-Treatment-After.jpg' 
     },
     { 
       id: 6, 
       service: 'Fashion Braces', 
       title: 'Stylish Braces Installation', 
-      before: 'https://images.unsplash.com/photo-1606811971618-4486d14f3f99?w=600&q=80', 
-      after: 'https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=600&q=80' 
+      before: 'https://www.bracesbydr.com/wp-content/uploads/2021/06/teeth-before-braces.jpg', 
+      after: 'https://www.bracesbydr.com/wp-content/uploads/2021/06/teeth-with-colorful-braces.jpg' 
     },
   ];
 

@@ -7,100 +7,96 @@ export default function Blog() {
   const [currentPage, setCurrentPage] = useState(1);
   const [selectedPost, setSelectedPost] = useState(null);
 
-  const categories = ['all', 'Skincare', 'Injectables', 'Laser Treatments', 'Wellness'];
+  const categories = ['all', 'Dental Services', 'Wellness'];
 
   const blogPosts = [
     {
       id: 1,
-      title: 'The Ultimate Guide to Morpheus8 Treatment',
-      category: 'Laser Treatments',
-      author: 'Dr. Smith',
+      title: 'The Benefits of Professional Teeth Whitening at Home',
+      category: 'Dental Services',
+      author: 'Nurse Blessing',
       date: 'March 15, 2024',
-      excerpt: 'Discover how this revolutionary treatment can transform your skin with minimal downtime and maximum results. Learn about the science behind Morpheus8...',
-      thumbnail: 'https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?w=600&q=80',
-      fullContent: `Morpheus8 is a revolutionary fractional skin treatment that combines microneedling with radiofrequency energy to remodel and contour the face and body. This innovative procedure has become one of the most sought-after treatments in medical aesthetics.
+      excerpt: 'Discover how professional teeth whitening delivered to your home can give you a brighter, more confident smile without the hassle of clinic visits...',
+      thumbnail: 'https://images.unsplash.com/photo-1606811971618-4486d14f3f99?w=600&q=80',
+      fullContent: `Professional teeth whitening is one of the most popular cosmetic dental treatments, and now you can enjoy it in the comfort of your own home with Life Care Aesthetics.
 
-**How Morpheus8 Works:**
-The treatment uses tiny needles to deliver radiofrequency energy deep into the skin and fat, triggering the body's natural healing response. This stimulates collagen production and remodels tissue from within, resulting in smoother, firmer, and more youthful-looking skin.
+**How It Works:**
+Our advanced whitening treatment uses professional-grade products that are significantly more effective than over-the-counter options. Nurse Blessing brings all the necessary equipment to your home and performs the treatment with expert care.
 
 **Benefits:**
-- Reduces wrinkles and fine lines
-- Tightens loose skin
-- Improves skin texture and tone
-- Minimizes acne scars
-- Reduces stretch marks
-- Little to no downtime
+- Noticeably whiter teeth in just one session
+- Safe and effective professional treatment
+- Convenient home service
+- No sensitivity issues with proper application
+- Long-lasting results with proper care
 
 **What to Expect:**
-Treatment takes 30-60 minutes depending on the area. Mild redness and swelling may occur for 1-3 days. Results continue to improve over 3-6 months as new collagen forms.
+The treatment takes 60-90 minutes. You'll see immediate results, with teeth several shades whiter. Results can last 6-12 months with good oral hygiene.
 
-**Best Candidates:**
-Morpheus8 is ideal for anyone looking to improve skin laxity, reduce wrinkles, or address scarring without surgery. It's safe for all skin types and can be used on the face, neck, and body.`
+**Aftercare:**
+Avoid dark-colored foods and drinks for 24-48 hours after treatment for best results.`
     },
     {
       id: 2,
-      title: 'Botox vs. Dysport: What\'s the Difference?',
-      category: 'Injectables',
-      author: 'Dr. Smith',
+      title: 'IV Drip Therapy: Boost Your Health and Beauty',
+      category: 'Wellness',
+      author: 'Nurse Blessing',
       date: 'March 10, 2024',
-      excerpt: 'Understanding the key differences between popular neurotoxin treatments to help you make an informed decision for your aesthetic goals...',
-      thumbnail: 'https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=600&q=80',
-      fullContent: `Both Botox and Dysport are FDA-approved neurotoxins that temporarily relax muscles to reduce wrinkles. While they work similarly, there are key differences to consider.
+      excerpt: 'Learn how IV drip therapy can enhance your wellness, boost immunity, and improve skin radiance with our home service treatments...',
+      thumbnail: 'https://images.unsplash.com/photo-1579154204601-01588f351e67?w=600&q=80',
+      fullContent: `IV drip therapy delivers essential vitamins, minerals, and nutrients directly into your bloodstream for maximum absorption and immediate benefits.
 
-**Key Differences:**
-- **Spread:** Dysport spreads more than Botox, making it ideal for larger areas
-- **Onset:** Dysport may show results 2-3 days faster than Botox
-- **Duration:** Both last 3-4 months on average
-- **Units:** Dysport requires more units but is priced lower per unit
+**Our IV Drip Services:**
+- **Detox IV:** Full body cleansing and detoxification
+- **Energy Booster:** Increase vitality and reduce fatigue
+- **Immune Booster:** Strengthen your immune system
+- **Radiance IV:** Skin brightening and anti-aging benefits
 
-**Best For Botox:**
-- Precise, targeted areas
-- Crow's feet
-- Frown lines between brows
+**Benefits:**
+- 100% absorption of nutrients
+- Immediate effects
+- Customized to your needs
+- Convenient home service
+- Administered by trained professionals
 
-**Best For Dysport:**
-- Larger treatment areas
-- Forehead lines
-- Those seeking faster results
-
-**The Verdict:**
-Both are excellent choices. Your provider will recommend the best option based on your specific needs and facial anatomy.`
+**What to Expect:**
+Treatment takes 30-45 minutes. You'll feel relaxed during the infusion and may notice increased energy and improved well-being shortly after.`
     },
     {
       id: 3,
-      title: 'Spring Skincare Routine for Glowing Skin',
-      category: 'Skincare',
-      author: 'Sarah Chen, Aesthetician',
+      title: 'Understanding Scaling and Polishing for Optimal Oral Health',
+      category: 'Dental Services',
+      author: 'Nurse Blessing',
       date: 'March 5, 2024',
-      excerpt: 'As the seasons change, so should your skincare routine. Here are our expert tips for maintaining radiant skin this spring...',
-      thumbnail: 'https://images.unsplash.com/photo-1560750588-73207b1ef5b8?w=600&q=80'
+      excerpt: 'Professional teeth cleaning is essential for maintaining healthy teeth and gums. Learn why scaling and polishing should be part of your routine...',
+      thumbnail: 'https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=600&q=80'
     },
     {
       id: 4,
-      title: 'Understanding Medical Grade Peels',
-      category: 'Skincare',
-      author: 'Dr. Smith',
+      title: 'Fashion Braces: Style Meets Dental Aesthetics',
+      category: 'Dental Services',
+      author: 'Nurse Blessing',
       date: 'February 28, 2024',
-      excerpt: 'Chemical peels can dramatically improve skin texture and tone. Learn which peel is right for your skin concerns...',
-      thumbnail: 'https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=600&q=80'
+      excerpt: 'Fashion braces are the latest trend in dental aesthetics. Discover how these decorative braces can enhance your smile and express your personality...',
+      thumbnail: 'https://images.unsplash.com/photo-1606811971618-4486d14f3f99?w=600&q=80'
     },
     {
       id: 5,
-      title: 'Laser Hair Removal: What to Expect',
-      category: 'Laser Treatments',
-      author: 'Jennifer Lee, RN',
+      title: 'The Importance of Gum Health',
+      category: 'Dental Services',
+      author: 'Nurse Blessing',
       date: 'February 20, 2024',
-      excerpt: 'Everything you need to know before your first laser hair removal session, from preparation to aftercare...',
-      thumbnail: 'https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=600&q=80'
+      excerpt: 'Healthy gums are the foundation of a beautiful smile. Learn about our gum treatment services and how to maintain optimal gum health...',
+      thumbnail: 'https://images.unsplash.com/photo-1606811971618-4486d14f3f99?w=600&q=80'
     },
     {
       id: 6,
-      title: 'The Importance of Medical-Grade Skincare',
-      category: 'Skincare',
-      author: 'Dr. Smith',
+      title: 'Tooth Gems: Add Sparkle to Your Smile',
+      category: 'Dental Services',
+      author: 'Nurse Blessing',
       date: 'February 15, 2024',
-      excerpt: 'Why professional skincare products deliver better results than over-the-counter alternatives...',
-      thumbnail: 'https://images.unsplash.com/photo-1515377905703-c4788e51af15?w=600&q=80'
+      excerpt: 'Tooth gems are a fun, temporary way to add some sparkle to your smile. Learn about the application process and how to care for your tooth jewelry...',
+      thumbnail: 'https://images.unsplash.com/photo-1606811971618-4486d14f3f99?w=600&q=80'
     },
   ];
 
@@ -126,11 +122,11 @@ Both are excellent choices. Your provider will recommend the best option based o
             alt="Blog background"
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-purple-primary/60"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-sage-primary/60"></div>
         </div>
         <div className="relative z-10 max-w-7xl mx-auto px-4 text-center">
-          <h1 className="text-5xl font-bold mb-4">Aesthetic Insights & Wellness Advice</h1>
-          <p className="text-xl">Expert guidance from our medical professionals</p>
+          <h1 className="text-5xl font-bold mb-4">Health & Beauty Insights</h1>
+          <p className="text-xl">Expert guidance from Life Care Aesthetics</p>
         </div>
       </section>
 
@@ -302,14 +298,14 @@ Both are excellent choices. Your provider will recommend the best option based o
       <section className="bg-gray-50 py-16">
         <div className="max-w-4xl mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold mb-4">Stay Updated</h2>
-          <p className="text-gray-700 mb-8">Subscribe to our newsletter for the latest aesthetic insights and exclusive offers</p>
+          <p className="text-gray-700 mb-8">Subscribe to our newsletter for the latest health and beauty insights and exclusive offers</p>
           <form className="flex flex-col sm:flex-row gap-4 max-w-xl mx-auto">
             <input
               type="email"
               placeholder="Enter your email"
-              className="flex-1 px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-instagram-blue"
+              className="flex-1 px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-sage-primary"
             />
-            <button className="bg-gold-gradient text-white px-8 py-3 rounded-lg font-semibold hover:opacity-90 transition">
+            <button className="bg-brand-gradient text-white px-8 py-3 rounded-lg font-semibold hover:opacity-90 transition">
               Subscribe
             </button>
           </form>
